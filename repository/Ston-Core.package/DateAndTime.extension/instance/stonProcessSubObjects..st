@@ -1,0 +1,2 @@
+*ston-core
+stonProcessSubObjects: block

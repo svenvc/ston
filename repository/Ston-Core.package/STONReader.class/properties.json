@@ -1,0 +1,20 @@
+{
+	"category" : "STON-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 1/14/2012 20:25",
+	"instvars" : [
+		"readStream",
+		"objects",
+		"classes",
+		"unresolvedReferences",
+		"stringStream" ],
+	"name" : "STONReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

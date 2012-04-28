@@ -1,0 +1,16 @@
+{
+	"category" : "STON-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		 ],
+	"name" : "STONShortListWriter",
+	"pools" : [
+		 ],
+	"super" : "STONListWriter",
+	"traitcomposition" : "{}",
+	"type" : "normal" }

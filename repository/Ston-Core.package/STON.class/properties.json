@@ -1,0 +1,16 @@
+{
+	"category" : "STON-Core",
+	"classinstvars" : [
+		 ],
+	"classtraitcomposition" : "{}",
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 4/24/2012 21:53",
+	"instvars" : [
+		 ],
+	"name" : "STON",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"traitcomposition" : "{}",
+	"type" : "normal" }
