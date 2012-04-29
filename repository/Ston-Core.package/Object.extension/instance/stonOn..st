@@ -9,4 +9,4 @@ stonOn: stonWriter
 		ifFalse: [
 			stonWriter writeObject: self streamMap: [ :dictionary |
 				self class allInstVarNames do: [ :each |
-					dictionary at: each asSymbol put: (self instVarNamed: each) ] ] ] 
+					dictionary at: each asSymbol put: (self instVarNamed: each) ] ] ]
