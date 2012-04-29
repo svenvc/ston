@@ -15,4 +15,4 @@ comparing
 							description = anObject description
 								and: [ 
 									boolean = anObject boolean
-										and: [ float = anObject float and: [ bytes = anObject bytes and: [ integer = anObject integer and: [ tags = anObject tags ] ] ] ] ] ] ] ]
+										and: [ (float closeTo: anObject float) and: [ bytes = anObject bytes and: [ integer = anObject integer and: [ tags = anObject tags ] ] ] ] ] ] ] ]

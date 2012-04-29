@@ -8,4 +8,4 @@ testNewSymbol
 		whileTrue: [ n := n + 1 ].
 	"Parsing the new, not yet interned name should create a new Symbol"
 	shouldBeSymbol := self materialize: '#', notASymbol.
-	self assert: (shouldBeSymbol isSymbol and: [ notASymbol = shouldBeSymbol ])
+	self assert: (shouldBeSymbol isSymbol and: [ notASymbol = shouldBeSymbol asString ])

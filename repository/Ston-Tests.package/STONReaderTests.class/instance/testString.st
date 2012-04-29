@@ -4,7 +4,6 @@ testString
 	self assert: (self materialize: '''foo''') = 'foo'.
 	self assert: (self materialize: '''FOO''') = 'FOO'.
 	self assert: (self materialize: '''\u00E9l\u00E8ve en Fran\u00E7ais''') = 'élève en Français'.
-	self assert: (self materialize: '''foo\rbar''') = 'foo\bar' withCRs.
 	string := String withAll: { 
 		$". $'. $\. Character tab. Character cr. Character lf.  Character newPage. Character backspace }.
 	self assert: (self materialize: '''\"\''\\\t\r\n\f\b''') = string.

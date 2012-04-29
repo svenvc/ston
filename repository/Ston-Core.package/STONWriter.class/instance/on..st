@@ -1,3 +1,3 @@
 initialize-release
 on: aWriteStream
-	writeStream := aWriteStream 
+	writeStream := aWriteStream

@@ -1,4 +1,4 @@
 private
 shortListElementSeparator
 	writeStream nextPut: $,.
-	self prettyPrintSpace 
+	self prettyPrintSpace

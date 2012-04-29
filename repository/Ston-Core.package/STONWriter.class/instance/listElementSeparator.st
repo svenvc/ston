@@ -1,4 +1,4 @@
 private
 listElementSeparator
 	writeStream nextPut: $,.
-	self newlineIndent 
+	self newlineIndent
