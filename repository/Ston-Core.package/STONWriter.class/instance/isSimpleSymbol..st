@@ -3,4 +3,4 @@ isSimpleSymbol: symbol
 	^ (symbol class 
 		findFirstInString: symbol 
 		inSet: STONSimpleSymbolCharacters 
-		startingAt: 1) = 0 
+		startingAt: 1) = 0

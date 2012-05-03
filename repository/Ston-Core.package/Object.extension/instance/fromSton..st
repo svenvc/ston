@@ -8,4 +8,4 @@ fromSton: stonReader
 			self subclassResponsibility ]
 		ifFalse: [
 			stonReader parseMapDo: [ :instVarName :value |
-				self instVarNamed: instVarName put: value ] ] 
+				self instVarNamed: instVarName put: value ] ]

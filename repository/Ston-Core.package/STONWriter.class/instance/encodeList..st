@@ -7,4 +7,4 @@ encodeList: elements
 			do: [ :each | self nextPut: each ]
 			separatedBy: [ self listElementSeparator ] ].
 	self newlineIndent.
-	writeStream nextPut: $] 
+	writeStream nextPut: $]

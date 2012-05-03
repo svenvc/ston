@@ -10,4 +10,4 @@ testReferenceSharingError
 	array := STON listClass with: one with: one with: one.
 	self 
 		should: [ (serializer value: array) = '[[#one],[#one],[#one]]' ] 
-		raise: STONWriterError 
+		raise: STONWriterError
