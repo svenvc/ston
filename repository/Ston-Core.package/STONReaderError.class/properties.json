@@ -2,6 +2,7 @@
 	"category" : "STON-Core",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
@@ -11,4 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "Error",
+	"traitcomposition" : "{}",
 	"type" : "normal" }
