@@ -49,6 +49,52 @@ Even without further explanation, the semantics should be clear.
       #boolean : false
     }
 
+Here is an example of a Rectangle and its STON representation:
+
+     Rectangle center: 10@10 extent: 100@50.
+
+     Rectangle {
+       #origin : Point [ -40, -15 ],
+       #corner : Point [ 60, 35 ]
+     }
+
+Here is a more complex example, the result of doing an HTTP request using the Zinc HTTP Components framework, a ZnResponse object:
+
+     ZnEasy get: 'http://zn.stfx.eu/zn/small.html'.
+
+     ZnResponse {
+       #headers : ZnHeaders {
+         #headers : ZnMultiValueDictionary {
+            'Date' : 'Fri, 04 May 2012 20:09:23 GMT',
+            'Modification-Date' : 'Thu, 10 Feb 2011 08:32:30 GMT',
+            'Content-Length' : '113',
+            'Server' : 'Zinc HTTP Components 1.0',
+            'Vary' : 'Accept-Encoding',
+            'Connection' : 'close',
+            'Content-Type' : 'text/html;charset=utf-8'
+         }
+       },
+       #entity : ZnStringEntity {
+         #contentType : ZnMimeType {
+            #main : 'text',
+            #sub : 'html',
+            #parameters : {
+                'charset' : 'utf-8'
+            }
+         },
+         #contentLength : 113,
+         #string : '<html>\n<head><title>Small</title></head>\n<body><h1>Small</h1><p>This is a small HTML document</p></body>\n</html>\n',
+         #encoder : ZnUTF8Encoder {
+            
+         }
+       },
+       #statusLine : ZnStatusLine {
+         #version : 'HTTP/1.1',
+         #code : 200,
+         #reason : 'OK'
+       }
+     }
+
 
 ### Rationale
 
@@ -184,11 +230,13 @@ a number of classes received a special, custom representation. These are:
 
 
 To validate the Smalltalk Object Notation a reference implementation
-was implemented in Pharo Smalltalk. It is available here:
+was implemented in [Pharo Smalltalk](http://www.pharo.st). It is available here:
 
-<http://ss3.gemstone.com/ss/STON>
+- <http://ss3.gemstone.com/ss/STON>
 
-It works in Pharo Smalltalk versions 1.3 and 1.4.
+- <https://github.com/svenvc/ston>
+
+It works in Pharo Smalltalk versions 1.3, 1.4 and 2.0 as well as in [Squeak](http://www.squeak.org).
 The project contains a full complement of unit tests.
 
 The key methods are instance method **stonOn:** 
@@ -200,6 +248,41 @@ to allow subobjects to be procossed, to resolve forward references to real objec
 Furthermore, the class method **stonName** allows for class name aliasing.
 That is, the external and internal class names do not have to be identical.
 
+Dale Hendrich did a port to [Gemstone Smalltalk](http://www.gemstone.com/products/gemstone) that is available here:
+
+- <https://github.com/dalehenrich/ston>
+
+He is working on ports to Amber Smalltalk and Cuis as well.
+
+
+### Compatibility
+
+
+The current STON implementation has a very large degree of JSON compatibility.
+Valid JSON input is almost valid STON. 
+The only exceptions are the string delimiters (single quotes for STON, double quotes for JSON) and nil vs. null.
+The STON parser accepts both variants for full compatibility.
+
+The STON writer has a jsonMode option so that generated output conforms to standard JSON.
+That means the use of single quotes as string delimiters, null instead of nil, the treatment of symbols as strings.
+Any non primitive instances that are not arrays or dictionaries will throw an error.
+Another option sets the referencePolicy.
+The default for STON is to track object references and generate reference when needed.
+Other options are to signal an error on shared references or circles, or to ignore them with the risk of going into an infinite loop.
+
+
+## Limitations
+
+
+STON in its current form cannot serialize a number of objects 
+that are more system or implementation than domain oriented, such as:
+
+- Blocks
+- Classes
+
+STON is also less efficient than a binary encoding.
+As a new format, STON has yet to prove itself in practice.
+  
 
 ## BNF
 
