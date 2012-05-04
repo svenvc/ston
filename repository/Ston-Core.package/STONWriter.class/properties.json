@@ -2,6 +2,7 @@
 	"category" : "STON-Core",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "{}",
 	"classvars" : [
 		"STONCharacters",
 		"STONSimpleSymbolCharacters" ],
@@ -17,4 +18,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "{}",
 	"type" : "normal" }
