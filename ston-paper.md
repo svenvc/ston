@@ -248,7 +248,7 @@ to allow subobjects to be procossed, to resolve forward references to real objec
 Furthermore, the class method **stonName** allows for class name aliasing.
 That is, the external and internal class names do not have to be identical.
 
-Dale Hendrich did a port to [Gemstone Smalltalk](http://www.gemstone.com/products/gemstone) that is available here:
+Dale Henrich did a port to [Gemstone Smalltalk](http://www.gemstone.com/products/gemstone) that is available here:
 
 - <https://github.com/dalehenrich/ston>
 
