@@ -21,7 +21,7 @@ Implementations for Pharo Smalltalk, Squeak and Gemstone Smalltalk are available
 ### Example
 
 
-If you have ever seen JSON [Javascript Object Notation](http://www.json.org), 
+If you have ever seen JSON, [Javascript Object Notation](http://www.json.org), 
 you will be instantly familiar with Smaltalk Object Notation. 
 It uses similar primitive values, with the addition of a symbol type.
 Some details are slightly different though.
@@ -84,9 +84,7 @@ Here is a more complex example, the result of doing an HTTP request using the Zi
          },
          #contentLength : 113,
          #string : '<html>\n<head><title>Small</title></head>\n<body><h1>Small</h1><p>This is a small HTML document</p></body>\n</html>\n',
-         #encoder : ZnUTF8Encoder {
-            
-         }
+         #encoder : ZnUTF8Encoder { }
        },
        #statusLine : ZnStatusLine {
          #version : 'HTTP/1.1',
@@ -176,7 +174,7 @@ There are generic ways to encode arbitrary objects.
 Non-collection classes are encoded using a map of their instance variables,
 instance variable name symbol mapped to instance variable value.
 Collection classes are encoded using a list of their values.
-Some classes have there own custom representation,
+Some classes have their own custom representation,
 often chosen for compactness and readability.
 
 For one selected list like collection subclass, currently **Array**, 
@@ -225,6 +223,14 @@ a number of classes received a special, custom representation. These are:
 - **ByteArray** a one element array with a hex string
 - **Character** a one element array with a one element string
 
+Whether or not you choose to use the default STON mapping for Objects, 
+where instance variables symbol names and their values become keys and values in a map,
+or whether you prefer a custom representation is up to you and your application.
+
+The generic mapping is flexible: it won't break when instance variables are added or removed.
+It is more verbose and exposes all internals of an object, including ephemeral ones.
+Custom representations are most useful to increase the readability of small, simple objects.
+ 
 
 ### Implementation
 
@@ -248,11 +254,71 @@ to allow subobjects to be procossed, to resolve forward references to real objec
 Furthermore, the class method **stonName** allows for class name aliasing.
 That is, the external and internal class names do not have to be identical.
 
-Dale Henrich did a port to [Gemstone Smalltalk](http://www.gemstone.com/products/gemstone) that is available here:
+Dale Henrichs did a port to [Gemstone Smalltalk](http://www.gemstone.com/products/gemstone) that is available here:
 
 - <https://github.com/dalehenrich/ston>
 
 He is working on ports to Amber Smalltalk and Cuis as well.
+
+
+### Usage
+
+
+This section lists some code examples on how to use the current implementation and its API.
+The class **STON** acts as a class facade API to read/write to/from streams/strings 
+while hiding the actual parser or writer classes. 
+It is a central access point, but it is very thin: 
+using the reader or writer directly is perfectly OK too,
+and offers some more options as well.
+
+Parsing is the simplest operation, use either the **fromString:** or **fromStream:** method, like this:
+
+    STON fromString: 'Rectangle { #origin : Point [ -40, -15 ], #corner : Point [ 60, 35 ]}'.
+
+    '/Users/sven/Desktop/foo.ston' asReference 
+        fileStreamDo: [ :stream | STON fromStream: stream ].
+
+Writing has two variants: the regular compact representation or the pretty printed one.
+The methods to use are **toString:** and **toStringPretty:** 
+or **put:onStream:** and **put:onStreamPretty:**, like this:
+
+    STON toString: World bounds.
+
+    STON toStringPretty: World bounds.
+
+    '/Users/sven/Desktop/bounds.ston' asReference 
+        fileStreamDo: [ :stream | 
+            STON put: World bounds onStream: stream ].
+
+    '/Users/sven/Desktop/bounds.ston' asReference 
+        fileStreamDo: [ :stream | 
+            STON put: World bounds onStreamPretty: stream ].
+
+Invoking the reader (parser) directly goes like this:
+
+    (STON reader on: 'Rectangle{#origin:Point[0,0],#corner:Point[1440,846]}' readStream) 
+        next.
+
+The writer can be used in a similar way:
+
+    String streamContents: [ :stream |
+        (STON writer on: stream) 
+            nextPut: World bounds ].
+
+Next is an example of how to use the STON writer to generate JSON output.
+Note that it is necessary to convert to Arrays and/or Dictionaries first.
+
+    | bounds json |
+    bounds := World bounds.
+    json := Dictionary
+        with: #origin -> (Dictionary with: #x -> bounds origin x with: #y -> bounds origin y)
+        with: #corner -> (Dictionary with: #x -> bounds corner x with: #y -> bounds corner y).
+    String streamContents: [ :stream |
+        (STON writer on: stream)
+            prettyPrint: true;
+            jsonMode: true;
+            referencePolicy: #error;
+            nextPut: json ].
 
 
 ### Compatibility
