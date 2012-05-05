@@ -2,6 +2,7 @@
 	"category" : "STON-Tests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 2/10/2012 20:25",
@@ -19,4 +20,5 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "{}",
 	"type" : "normal" }

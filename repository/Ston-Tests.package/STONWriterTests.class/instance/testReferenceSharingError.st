@@ -3,7 +3,8 @@ testReferenceSharingError
 	| serializer array one |
 	serializer := [ :object | 
 		String streamContents: [ :stream |
-			(STONWriter on: stream)
+			STON writer 
+				on: stream;
 				referencePolicy: #error; 
 				nextPut: object ] ].
 	one := { #one }.
