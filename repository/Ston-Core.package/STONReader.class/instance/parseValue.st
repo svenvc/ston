@@ -16,10 +16,5 @@ parseValue
 			ifTrue: [ ^ self parseReference ].
 		(char = $- or: [ char isDigit ])
 			ifTrue: [ ^ self parseNumber ].
-		(self match: 'true')
-			ifTrue: [ ^ true ].
-		(self match: 'false')
-			ifTrue: [ ^ false ].
-		((self match: 'nil') or: [ self match: 'null' ])
-			ifTrue: [ ^ nil ] ].
+		self parseConstantDo: [ :value | ^ value ] ].
 	self error: 'invalid input'

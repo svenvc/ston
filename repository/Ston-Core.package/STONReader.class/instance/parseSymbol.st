@@ -1,7 +1,7 @@
 parsing-internal
 parseSymbol
 	| string |
-	self expect: '#'.
+	self expectChar: $#.
 	readStream peek = $'
 		ifTrue: [ ^ self parseStringInternal asSymbol ].
 	string := self stringStreamContents: [ :stream |
