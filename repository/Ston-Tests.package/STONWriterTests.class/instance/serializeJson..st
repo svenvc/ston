@@ -1,7 +1,6 @@
 private
 serializeJson: anObject
 	^ String streamContents: [ :stream |
-		STON writer 
+		STON jsonWriter 
 			on: stream; 
-			jsonMode: true;
 			nextPut: anObject ]
