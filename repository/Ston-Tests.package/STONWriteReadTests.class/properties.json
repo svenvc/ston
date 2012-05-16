@@ -2,6 +2,7 @@
 	"category" : "STON-Tests",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
@@ -11,4 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "TestCase",
+	"traitcomposition" : "{}",
 	"type" : "normal" }

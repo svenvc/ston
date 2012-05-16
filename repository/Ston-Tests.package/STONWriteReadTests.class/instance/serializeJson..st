@@ -1,6 +1,6 @@
 private
-serialize: anObject
+serializeJson: anObject
 	^ String streamContents: [ :stream |
-		STON writer 
+		STON jsonWriter 
 			on: stream;
 			nextPut: anObject ]

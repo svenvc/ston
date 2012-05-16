@@ -3,7 +3,8 @@ testReferenceSharingIgnore
 	| serializer array one |
 	serializer := [ :object | 
 		String streamContents: [ :stream |
-			(STONWriter on: stream)
+			STON writer 
+				on: stream;
 				referencePolicy: #ignore; 
 				nextPut: object ] ].
 	one := { #one }.
