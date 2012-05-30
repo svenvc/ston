@@ -5,7 +5,7 @@
 	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
-	"commentStamp" : "SvenVanCaekenberghe 1/14/2012 20:25",
+	"commentStamp" : "SvenVanCaekenberghe 5/29/2012 21:15",
 	"instvars" : [
 		"readStream",
 		"objects",
