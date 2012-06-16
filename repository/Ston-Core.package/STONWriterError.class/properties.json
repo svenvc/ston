@@ -2,6 +2,7 @@
 	"category" : "STON-Core",
 	"classinstvars" : [
 		 ],
+	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 4/26/2012 17:17",
@@ -11,4 +12,5 @@
 	"pools" : [
 		 ],
 	"super" : "Error",
+	"traitcomposition" : "{}",
 	"type" : "normal" }

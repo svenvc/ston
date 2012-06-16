@@ -1,5 +1,5 @@
 STON implements serialization and materialization using the Smalltalk Object Notation format.
-
+ 
 S y n t a x
 
 	value

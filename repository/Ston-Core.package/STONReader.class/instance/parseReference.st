@@ -1,7 +1,7 @@
 parsing-internal
 parseReference
 	| index object |
-	self expect: '@'.
+	self expectChar: $@.
 	index := self parseNumberInteger.
 	self consumeWhitespace.
 	object := self resolveReferenceIndex: index.

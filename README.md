@@ -7,7 +7,11 @@ It can be used to serialize domain level objects,
 either for persistency or network transport. 
 As its name suggests, it is based on JSON (Javascript Object Notation). 
 It adds symbols as a primitive value, class tags for object values and references. 
-A working reference implementation in Pharo Smalltalk is available as a proof of concept.
+Implementations for Pharo Smalltalk, Squeak and Gemstone Smalltalk are available.
 
 
-Sven Van Caekenberghe February 14, 2012. MIT Licensed.
+## Please read the [Smalltalk Object Notation](https://github.com/svenvc/ston/blob/master/ston-paper.md) paper
+
+
+*Sven Van Caekenberghe* 
+[MIT Licensed](https://github.com/svenvc/ston/blob/master/license.txt)

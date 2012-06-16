@@ -1,13 +1,13 @@
 tests
 testIsSimpleSymbol
-	self assert: (STONWriter new isSimpleSymbol: #foo).
-	self assert: (STONWriter new isSimpleSymbol: #az).
-	self assert: (STONWriter new isSimpleSymbol: #AZ).
-	self assert: (STONWriter new isSimpleSymbol: #N0123456789).
-	self assert: (STONWriter new isSimpleSymbol: #foo123).
-	self assert: (STONWriter new isSimpleSymbol: #'Foo/Bar').
-	self assert: (STONWriter new isSimpleSymbol: #'Foo.Bar').
-	self assert: (STONWriter new isSimpleSymbol: #'Foo-Bar').
-	self assert: (STONWriter new isSimpleSymbol: #'Foo_Bar').
-	self assert: (STONWriter new isSimpleSymbol: #foo).
-	self deny: (STONWriter new isSimpleSymbol: #'#^&$%')
+	self assert: (STON writer isSimpleSymbol: #foo).
+	self assert: (STON writer isSimpleSymbol: #az).
+	self assert: (STON writer isSimpleSymbol: #AZ).
+	self assert: (STON writer isSimpleSymbol: #N0123456789).
+	self assert: (STON writer isSimpleSymbol: #foo123).
+	self assert: (STON writer isSimpleSymbol: #'Foo/Bar').
+	self assert: (STON writer isSimpleSymbol: #'Foo.Bar').
+	self assert: (STON writer isSimpleSymbol: #'Foo-Bar').
+	self assert: (STON writer isSimpleSymbol: #'Foo_Bar').
+	self assert: (STON writer isSimpleSymbol: #foo).
+	self deny: (STON writer isSimpleSymbol: #'#^&$%')

@@ -2,10 +2,11 @@ private
 lookupClass: name
 	Smalltalk globals 
 		at: name 
-		ifPresent: [ :cls | ^ cls ].
-	^ clses 
+		ifPresent: [ :class | ^ class ].
+	^ classes 
 		at: name 
 		ifAbsentPut: [
-			Object allSubclses 
-				detect: [ :cls | cls stonName == name ] 
-				ifNone: [ self error: 'Cannot resolve cls named ', name printString ] ]
+			Object allSubclasses 
+				detect: [ :class | class stonName == name ] 
+				ifNone: [ self error: 'Cannot resolve class named ', name printString ] ]
+	
