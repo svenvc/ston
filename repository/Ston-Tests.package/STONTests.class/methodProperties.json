@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testFromString" : "SvenVanCaekenberghe 1/24/2012 09:53",
+		"testPrettyPrinting" : "SvenVanCaekenberghe 2/12/2012 20:20",
+		"testToString" : "SvenVanCaekenberghe 1/24/2012 09:53" } }
