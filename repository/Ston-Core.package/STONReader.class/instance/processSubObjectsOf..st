@@ -7,4 +7,7 @@ processSubObjectsOf: object
 				stonProcessSubObjects: [ :each | 
 					each isStonReference
 						ifTrue: [ self resolveReference: each ]
-						ifFalse: [ stack push: each ] ] ]
+						ifFalse: [ 
+							each stonContainSubObjects
+								ifTrue: [ stack push: each ]
+								ifFalse: [ each ] ] ] ]
