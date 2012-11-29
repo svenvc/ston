@@ -1,3 +1,5 @@
 initialize-release
 optimizeForLargeStructures
-	objects := (self class environment at: #FLLargeIdentityDictionary) new
+	self class environment
+		at: #FLLargeIdentityDictionary
+		ifPresent: [ :identityDictionaryClass | objects := identityDictionaryClass new ].
