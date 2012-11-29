@@ -11,7 +11,8 @@
 		"classes",
 		"unresolvedReferences",
 		"stringStream",
-		"allowComplexMapKeys" ],
+		"allowComplexMapKeys",
+		"stack" ],
 	"name" : "STONReader",
 	"pools" : [
 		 ],
