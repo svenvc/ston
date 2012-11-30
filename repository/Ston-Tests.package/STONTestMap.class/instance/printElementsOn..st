@@ -1,3 +1,7 @@
 printing
 printElementsOn: stream
-	stream nextPut: $#; print: self size
+	stream
+		nextPut: $(;
+		nextPut: $#;
+		print: self size;
+		nextPut: $)

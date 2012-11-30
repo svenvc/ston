@@ -1,0 +1,17 @@
+{
+	"category" : "STON-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"stream",
+		"buffer",
+		"position",
+		"limit" ],
+	"name" : "STONBufferedReadStream",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

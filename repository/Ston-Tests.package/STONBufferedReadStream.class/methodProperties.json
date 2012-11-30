@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"on:" : "SvenVanCaekenberghe 11/30/2012 10:57" },
+	"instance" : {
+		"atEnd" : "SvenVanCaekenberghe 11/30/2012 10:39",
+		"close" : "SvenVanCaekenberghe 11/30/2012 10:28",
+		"initialize" : "SvenVanCaekenberghe 11/30/2012 11:07",
+		"next" : "SvenVanCaekenberghe 11/30/2012 10:54",
+		"nextBuffer" : "SvenVanCaekenberghe 11/30/2012 11:15",
+		"on:" : "SvenVanCaekenberghe 11/30/2012 10:57",
+		"peek" : "SvenVanCaekenberghe 11/30/2012 10:43",
+		"sizeBuffer:" : "SvenVanCaekenberghe 11/30/2012 10:48",
+		"wrappedStream" : "SvenVanCaekenberghe 11/30/2012 10:27" } }
