@@ -1,0 +1,14 @@
+{
+	"category" : "ConfigurationOfSton",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"LastVersionLoad" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"project" ],
+	"name" : "ConfigurationOfSton",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
