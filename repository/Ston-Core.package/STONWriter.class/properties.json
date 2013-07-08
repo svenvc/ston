@@ -9,6 +9,7 @@
 	"instvars" : [
 		"writeStream",
 		"prettyPrint",
+		"newLine",
 		"jsonMode",
 		"referencePolicy",
 		"level",
