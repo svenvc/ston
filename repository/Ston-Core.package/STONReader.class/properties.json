@@ -2,7 +2,6 @@
 	"category" : "STON-Core",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		 ],
 	"commentStamp" : "SvenVanCaekenberghe 5/29/2012 21:15",
@@ -11,10 +10,11 @@
 		"objects",
 		"classes",
 		"unresolvedReferences",
-		"stringStream" ],
+		"stringStream",
+		"allowComplexMapKeys",
+		"stack" ],
 	"name" : "STONReader",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "{}",
 	"type" : "normal" }

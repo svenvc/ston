@@ -2,7 +2,6 @@
 	"category" : "STON-Core",
 	"classinstvars" : [
 		 ],
-	"classtraitcomposition" : "{}",
 	"classvars" : [
 		"STONCharacters",
 		"STONSimpleSymbolCharacters" ],
@@ -10,6 +9,7 @@
 	"instvars" : [
 		"writeStream",
 		"prettyPrint",
+		"newLine",
 		"jsonMode",
 		"referencePolicy",
 		"level",
@@ -18,5 +18,4 @@
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"traitcomposition" : "{}",
 	"type" : "normal" }
