@@ -3,9 +3,9 @@ lookupClass: name
 	Smalltalk globals 
 		at: name 
 		ifPresent: [ :cls | ^ cls ].
-	^ clses 
+	^ classes 
 		at: name 
 		ifAbsentPut: [
-			Object allSubclses 
+			Object allSubclasses 
 				detect: [ :cls | cls stonName == name ] 
 				ifNone: [ self error: 'Cannot resolve cls named ', name printString ] ]
