@@ -35,5 +35,7 @@
 		"testSymbolAsString" : "SvenVanCaekenberghe 5/5/2012 19:12",
 		"testTime" : "dkh 4/29/2012 08:48:15",
 		"testTimeStamp" : "SvenVanCaekenberghe 1/19/2012 10:02",
-		"testUser" : "SvenVanCaekenberghe 2/11/2012 13:14",
-		"testUser2" : "SvenVanCaekenberghe 2/11/2012 13:14" } }
+		"testUser" : "SvenVanCaekenberghe 11/13/2013 23:58",
+		"testUser2" : "SvenVanCaekenberghe 11/13/2013 23:58",
+		"testUser3Nil" : "SvenVanCaekenberghe 11/13/2013 23:56",
+		"testUserNil" : "SvenVanCaekenberghe 11/13/2013 23:56" } }

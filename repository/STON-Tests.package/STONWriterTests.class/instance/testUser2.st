@@ -4,4 +4,6 @@ testUser2
 	(user := STONTestUser2 new)
 		username: 'john@foo.com';
 		password: 'secret1'.
-	self assert: (self serialize: user) = 'TestUser2{#username:''john@foo.com'',#password:''secret1'',#enabled:true}'
+	self 
+		assert: (self serialize: user)
+		equals: 'TestUser2{#username:''john@foo.com'',#password:''secret1'',#enabled:true}'

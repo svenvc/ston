@@ -1,14 +1,14 @@
 {
-	"category" : "STON-Core",
+	"category" : "STON-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "<historical>",
 	"instvars" : [
-		"streamPosition" ],
-	"name" : "STONReaderError",
+		 ],
+	"name" : "STONTestUser3",
 	"pools" : [
 		 ],
-	"super" : "Error",
+	"super" : "STONTestUser",
 	"type" : "normal" }

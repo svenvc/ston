@@ -7,4 +7,9 @@ writeObject: anObject
 		ifFalse: [ 
 			self writeObject: anObject streamMap: [ :dictionary | 
 				instanceVariableNames do: [ :each | 
-					dictionary at: each asSymbol put: (anObject instVarNamed: each) ] ] ]
+					(anObject instVarNamed: each)
+						ifNotNil: [ :value | 
+							dictionary at: each asSymbol put: value ]
+						ifNil: [ 
+							anObject stonShouldWriteNilInstVars 
+								ifTrue: [ dictionary at: each asSymbol put: nil ] ] ] ] ]

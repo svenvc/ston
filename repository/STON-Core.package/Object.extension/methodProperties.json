@@ -2,8 +2,9 @@
 	"class" : {
 		"fromSton:" : "SvenVanCaekenberghe 2/12/2012 19:58" },
 	"instance" : {
-		"fromSton:" : "SvenVanCaekenberghe 4/29/2012 12:23:33",
+		"fromSton:" : "SvenVanCaekenberghe 3/23/2014 19:31",
 		"isStonReference" : "SvenVanCaekenberghe 1/18/2012 20:16",
 		"stonContainSubObjects" : "SvenVanCaekenberghe 11/29/2012 16:24",
 		"stonOn:" : "SvenVanCaekenberghe 11/28/2012 14:27",
-		"stonProcessSubObjects:" : "SvenVanCaekenberghe 11/29/2012 16:22" } }
+		"stonProcessSubObjects:" : "SvenVanCaekenberghe 11/29/2012 16:22",
+		"stonShouldWriteNilInstVars" : "SvenVanCaekenberghe 11/13/2013 23:43" } }

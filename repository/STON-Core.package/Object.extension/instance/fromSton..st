@@ -1,7 +1,7 @@
 *ston-core
 fromSton: stonReader
 	"Decode non-variable classes from a map of their instance variables and values.
-	Override to customize and add a mathcing #toSton: (see implementors)."
+	Override to customize and add a matching #toSton: (see implementors)."
 	
 	self class isVariable 
 		ifTrue: [
