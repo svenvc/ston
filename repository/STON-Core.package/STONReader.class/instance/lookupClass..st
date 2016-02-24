@@ -7,6 +7,6 @@ lookupClass: name
 		at: name 
 		ifAbsentPut: [
 			Object allSubclasses 
-				detect: [ :class | class stonName == name ] 
-				ifNone: [ self error: 'Cannot resolve class named ', name printString ] ]
+				detect: [ :class | class isMeta not and: [ class stonName == name ]  ]
+				ifNone: [ NotFound signalFor: name ] ]
 	

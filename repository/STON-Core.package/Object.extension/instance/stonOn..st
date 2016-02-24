@@ -5,6 +5,6 @@ stonOn: stonWriter
 
 	self class isVariable 
 		ifTrue: [
-			self subclassResponsibility ]
+			stonWriter error: 'custom #stonOn: implementation needed for variable/indexable class' ]
 		ifFalse: [
 			stonWriter writeObject: self ]

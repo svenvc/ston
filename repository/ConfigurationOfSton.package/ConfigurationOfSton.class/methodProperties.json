@@ -2,6 +2,9 @@
 	"class" : {
 		"DevelopmentSupport" : "SeanDeNigris 7/5/2012 19:06",
 		"baseConfigurationClassIfAbsent:" : "SeanDeNigris 7/5/2012 19:06",
+		"catalogContactInfo" : "SvenVanCaekenberghe 1/5/2016 09:33",
+		"catalogDescription" : "SvenVanCaekenberghe 1/5/2016 09:35",
+		"catalogKeywords" : "SvenVanCaekenberghe 1/5/2016 09:36",
 		"ensureMetacello" : "SeanDeNigris 7/5/2012 19:06",
 		"ensureMetacelloBaseConfiguration" : "SeanDeNigris 7/5/2012 19:06",
 		"isMetacelloConfig" : "SeanDeNigris 7/5/2012 19:06",
@@ -15,7 +18,7 @@
 		"baseline02:" : "SvenVanCaekenberghe 10/26/2012 10:45",
 		"baseline03:" : "SvenVanCaekenberghe 11/28/2013 19:20",
 		"project" : "SeanDeNigris 7/5/2012 19:06",
-		"stable:" : "SvenVanCaekenberghe 4/24/2014 13:38",
+		"stable:" : "SvenVanCaekenberghe 2/22/2016 12:35",
 		"version01:" : "SeanDeNigris 7/5/2012 19:12",
 		"version02:" : "SvenVanCaekenberghe 10/25/2012 17:41",
 		"version03:" : "SvenVanCaekenberghe 10/26/2012 10:54",
@@ -24,4 +27,12 @@
 		"version06:" : "SvenVanCaekenberghe 11/28/2013 19:21",
 		"version07:" : "DamienCassou 12/11/2013 16:46",
 		"version08:" : "SvenVanCaekenberghe 1/21/2014 20:00",
-		"version09:" : "SvenVanCaekenberghe 4/24/2014 13:38" } }
+		"version09:" : "SvenVanCaekenberghe 4/24/2014 13:38",
+		"version10:" : "SvenVanCaekenberghe 12/8/2014 23:38",
+		"version11:" : "SvenVanCaekenberghe 4/10/2015 15:33",
+		"version12:" : "SvenVanCaekenberghe 4/10/2015 20:31",
+		"version13:" : "SvenVanCaekenberghe 4/30/2015 20:31",
+		"version14:" : "SvenVanCaekenberghe 5/28/2015 15:58",
+		"version15:" : "SvenVanCaekenberghe 9/9/2015 13:53",
+		"version16:" : "SvenVanCaekenberghe 2/19/2016 14:57",
+		"version17:" : "SvenVanCaekenberghe 2/22/2016 12:35" } }

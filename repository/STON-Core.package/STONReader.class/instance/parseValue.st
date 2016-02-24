@@ -1,20 +1,10 @@
 parsing
 parseValue
-	| char |
-	readStream atEnd ifFalse: [ 
-		(self isClassStartChar: (char := readStream peek)) 
-			ifTrue: [ ^ self parseObject ].
-		char = ${
-			ifTrue: [ ^ self parseMap ].
-		char = $[
-			ifTrue: [ ^ self parseList ].
-		(char = $' or: [ char = $" ])
-			ifTrue: [ ^ self parseString ].
-		char = $#
-			ifTrue: [ ^ self parseSymbol ].
-		char = $@
-			ifTrue: [ ^ self parseReference ].
-		(char = $- or: [ char isDigit ])
-			ifTrue: [ ^ self parseNumber ].
-		self parseConstantDo: [ :value | ^ value ] ].
-	self error: 'invalid input'
+	| value |
+	value := self parseSimpleValue.
+	^ (self matchChar: $:)
+		ifTrue: [ 
+			(self isValidPropertyNameType: value)
+				ifFalse: [ self error: 'unexpected property name type' ].
+			STON associationClass key: value value: self parseValue ]
+		ifFalse: [ value ]

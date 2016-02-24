@@ -1,7 +1,7 @@
 writing
 writeObject: anObject
 	| instanceVariableNames |
-	(instanceVariableNames := anObject class allInstVarNames) isEmpty
+	(instanceVariableNames := anObject class stonAllInstVarNames) isEmpty
 		ifTrue: [ 
 			self writeObject: anObject do: [ self encodeMap: #() ] ]
 		ifFalse: [ 

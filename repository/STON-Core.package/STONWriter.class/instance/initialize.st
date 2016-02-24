@@ -5,5 +5,5 @@ initialize
 	newLine := String cr.
 	level := 0.
 	referencePolicy := #normal.
-	jsonMode := false.
+	jsonMode := keepNewLines := asciiOnly := false.
 	objects := IdentityDictionary new

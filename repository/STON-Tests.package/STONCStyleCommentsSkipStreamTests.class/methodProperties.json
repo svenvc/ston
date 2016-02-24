@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCommentInString" : "SvenVanCaekenberghe 7/17/2015 14:15",
+		"testMultiLineComment" : "SvenVanCaekenberghe 7/17/2015 13:38",
+		"testNonComment" : "SvenVanCaekenberghe 6/8/2015 23:17",
+		"testSTON" : "SvenVanCaekenberghe 7/17/2015 14:16",
+		"testSingleLineComment" : "SvenVanCaekenberghe 7/17/2015 13:39" } }

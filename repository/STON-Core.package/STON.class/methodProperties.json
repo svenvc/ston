@@ -1,7 +1,11 @@
 {
 	"class" : {
+		"associationClass" : "SvenVanCaekenberghe 8/15/2015 17:11",
+		"classNameKey" : "SvenVanCaekenberghe 8/12/2014 15:04",
 		"fromStream:" : "SvenVanCaekenberghe 1/24/2012 09:39",
+		"fromStreamWithComments:" : "SvenVanCaekenberghe 6/9/2015 10:03",
 		"fromString:" : "SvenVanCaekenberghe 1/24/2012 09:40",
+		"fromStringWithComments:" : "SvenVanCaekenberghe 6/9/2015 10:03",
 		"jsonWriter" : "SvenVanCaekenberghe 5/15/2012 09:32",
 		"listClass" : "SvenVanCaekenberghe 1/24/2012 09:36",
 		"mapClass" : "SvenVanCaekenberghe 1/24/2012 09:36",

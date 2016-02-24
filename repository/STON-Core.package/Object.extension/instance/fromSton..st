@@ -5,7 +5,6 @@ fromSton: stonReader
 	
 	self class isVariable 
 		ifTrue: [
-			self subclassResponsibility ]
+			stonReader error: 'custom #fromSton: implementation needed for variable/indexable class' ]
 		ifFalse: [
-			stonReader parseMapDo: [ :instVarName :value |
-				self instVarNamed: instVarName put: value ] ]
+			stonReader parseNamedInstVarsFor: self ]

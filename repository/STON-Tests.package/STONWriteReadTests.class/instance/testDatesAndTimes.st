@@ -5,6 +5,5 @@ testDatesAndTimes
 		Time fromSeconds: 
 		Time now asSeconds. 
 		Date today. 
-		DateAndTime now. 
-		TimeStamp now }.
+		DateAndTime now }.
 	self serializeAndMaterialize: datesAndTimes

@@ -6,7 +6,7 @@ with: object do: block
 	(index := objects at: object ifAbsent: [ nil ]) notNil
 		ifTrue: [
 			referencePolicy = #error
-				ifTrue: [ ^ STONWriterError signal: 'Shared reference detected' ].
+				ifTrue: [ ^ self error: 'shared reference detected' ].
 			self writeReference: index ]
 		ifFalse: [
 			index := objects size + 1.

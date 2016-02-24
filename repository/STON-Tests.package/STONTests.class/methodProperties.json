@@ -6,6 +6,7 @@
 		"write:toFileNamed:" : "SvenVanCaekenberghe 11/29/2012 22:28" },
 	"instance" : {
 		"testFromString" : "SvenVanCaekenberghe 1/24/2012 09:53",
+		"testFromStringWithComments" : "SvenVanCaekenberghe 6/9/2015 10:09",
 		"testPrettyPrinting" : "SvenVanCaekenberghe 2/12/2012 20:20",
 		"testRoomExitCycles" : "SvenVanCaekenberghe 11/29/2012 10:32",
 		"testToString" : "SvenVanCaekenberghe 1/24/2012 09:53" } }

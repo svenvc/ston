@@ -1,3 +1,3 @@
 tests
 testNull
-	self assert: (self materialize: 'null') = nil
+	self assert: (self materialize: 'null') isNil

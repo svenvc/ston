@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "SvenVanCaekenberghe 5/29/2012 21:15",
+	"commentStamp" : "SvenVanCaekenberghe 4/26/2015 23:49",
 	"instvars" : [
 		"readStream",
 		"objects",
@@ -12,7 +12,10 @@
 		"unresolvedReferences",
 		"stringStream",
 		"allowComplexMapKeys",
-		"stack" ],
+		"acceptUnknownClasses",
+		"newLine",
+		"stack",
+		"convertNewLines" ],
 	"name" : "STONReader",
 	"pools" : [
 		 ],
