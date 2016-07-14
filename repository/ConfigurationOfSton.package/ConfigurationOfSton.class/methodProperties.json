@@ -17,8 +17,11 @@
 		"baseline01:" : "SeanDeNigris 7/5/2012 19:11",
 		"baseline02:" : "SvenVanCaekenberghe 10/26/2012 10:45",
 		"baseline03:" : "SvenVanCaekenberghe 11/28/2013 19:20",
+		"baseline04:" : "PavelKrivanek 6/1/2016 12:04",
+		"bleedingEdge:" : "SvenVanCaekenberghe 6/6/2016 14:59",
+		"development:" : "SvenVanCaekenberghe 6/6/2016 14:36",
 		"project" : "SeanDeNigris 7/5/2012 19:06",
-		"stable:" : "SvenVanCaekenberghe 2/22/2016 12:35",
+		"stable:" : "SvenVanCaekenberghe 6/6/2016 14:34",
 		"version01:" : "SeanDeNigris 7/5/2012 19:12",
 		"version02:" : "SvenVanCaekenberghe 10/25/2012 17:41",
 		"version03:" : "SvenVanCaekenberghe 10/26/2012 10:54",
@@ -35,4 +38,8 @@
 		"version14:" : "SvenVanCaekenberghe 5/28/2015 15:58",
 		"version15:" : "SvenVanCaekenberghe 9/9/2015 13:53",
 		"version16:" : "SvenVanCaekenberghe 2/19/2016 14:57",
-		"version17:" : "SvenVanCaekenberghe 2/22/2016 12:35" } }
+		"version17:" : "SvenVanCaekenberghe 2/22/2016 12:35",
+		"version18:" : "SvenVanCaekenberghe 4/17/2016 10:59",
+		"version19:" : "PavelKrivanek 4/20/2016 12:39",
+		"version20:" : "PavelKrivanek 6/1/2016 13:17",
+		"version21:" : "SvenVanCaekenberghe 6/6/2016 13:17" } }

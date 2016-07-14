@@ -14,7 +14,6 @@
 		"allowComplexMapKeys",
 		"acceptUnknownClasses",
 		"newLine",
-		"stack",
 		"convertNewLines" ],
 	"name" : "STONReader",
 	"pools" : [
