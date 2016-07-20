@@ -1,13 +1,15 @@
 {
+	"instance" : {
+		"stonContainSubObjects" : "SvenVanCaekenberghe 11/29/2012 16:24",
+		"stonProcessSubObjects:" : "SvenVanCaekenberghe 11/29/2012 16:22",
+		"isStonReference" : "SvenVanCaekenberghe 1/18/2012 20:16",
+		"fromSton:" : "SvenVanCaekenberghe 5/28/2015 15:32",
+		"stonShouldWriteNilInstVars" : "SvenVanCaekenberghe 11/13/2013 23:43",
+		"stonOn:" : "SvenVanCaekenberghe 5/28/2015 15:06"
+	},
 	"class" : {
 		"fromSton:" : "SvenVanCaekenberghe 2/12/2012 19:58",
-		"stonAllInstVarNames" : "SvenVanCaekenberghe 11/27/2014 11:08",
-		"stonName" : "SvenVanCaekenberghe 8/12/2014 13:28" },
-	"instance" : {
-		"fromSton:" : "SvenVanCaekenberghe 5/28/2015 15:32",
-		"isStonReference" : "SvenVanCaekenberghe 1/18/2012 20:16",
-		"stonContainSubObjects" : "SvenVanCaekenberghe 11/29/2012 16:24",
-		"stonOn:" : "SvenVanCaekenberghe 5/28/2015 15:06",
-		"stonPostReferenceResolution" : "SvenVanCaekenberghe 4/14/2016 13:45",
-		"stonProcessSubObjects:" : "SvenVanCaekenberghe 11/29/2012 16:22",
-		"stonShouldWriteNilInstVars" : "SvenVanCaekenberghe 11/13/2013 23:43" } }
+		"stonName" : "CyrilFerlicot 7/20/2016 22:13",
+		"stonAllInstVarNames" : "SvenVanCaekenberghe 11/27/2014 11:08"
+	}
+}
