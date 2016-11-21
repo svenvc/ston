@@ -1,0 +1,9 @@
+SmalltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #configuration : 'Ston',
+      #directory : 'repository',
+      #platforms : [ #squeak, #pharo ]
+    }
+  ]
+}
