@@ -1,5 +1,7 @@
 # STON - Smalltalk Object Notation
 
+[![Build Status](https://travis-ci.org/svenvc/ston.svg?branch=master)](https://travis-ci.org/svenvc/ston)
+
 
 A lightweight text-based, human-readable data interchange format 
 for class-based object-oriented languages like Smalltalk.
