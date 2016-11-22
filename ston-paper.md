@@ -1,5 +1,7 @@
 # Smalltalk Object Notation (STON)
 
+[![Build Status](https://travis-ci.org/svenvc/ston.svg?branch=master)](https://travis-ci.org/svenvc/ston)
+
 *Sven Van Caekenberghe*
 
 *First version: February 14, 2012*
