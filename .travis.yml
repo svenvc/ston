@@ -1,32 +1,13 @@
-language: erlang
+language: smalltalk
+sudo: false
 
-branches:
-  only:
-    - pharo
+smalltalk:
+  - Pharo-alpha
+  - Pharo-stable
+  - Pharo-4.0
+  - Pharo-3.0
 
-# build matrix: "PharoCore-1.3" or "Squeak4.3" ... parallel tests for
-#   all listed environments
-env:
-   - ST=PharoCore-1.3
-
-install:
-   - export PROJECT_HOME="$(pwd)"
-   - cd $HOME
-   - wget -O builderCI.zip https://github.com/dalehenrich/builderCI/zipball/master
-   - unzip -q builderCI.zip
-   - cd dalehenrich-builderCI*
-   - source build_env_vars
-   - ./build_clone.sh -g "-b pharo1.3 git://github.com/dalehenrich/filetree.git"
-   - ./build_clone.sh -g "git://github.com/dalehenrich/metacello-work.git"
-   - ln -s $PROJECT_HOME $GIT_PATH
-   - ./build_image.sh
-
-script:
-
-   - ./build.sh -i $ST -m -f "$PROJECT_HOME/tests/travisCI.st" -o travisCI
-   - cd "${BUILD_PATH}/travisCI/"
-   - if ( test -e PharoDebug.log ); then cat PharoDebug.log; fi
-   - if ( test -e PharoDebug.log ); then die; fi
-   - if ( test -e TravisCISuccess.txt ); then cat TravisCISuccess.txt; fi
-   - if ( test -e TravisCIFailure.txt ); then cat TravisCIFailure.txt; fi
-   - if ( test -e TravisCIFailure.txt ); then die; fi
+matrix:
+  allow_failures:
+    - smalltalk: Pharo-alpha
+  fast_finish: true
