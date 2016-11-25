@@ -3,12 +3,12 @@
 		 },
 	"instance" : {
 		"testBooleans" : "SvenVanCaekenberghe 3/15/2016 14:44",
-		"testCircular" : "SvenVanCaekenberghe 3/15/2016 16:46",
+		"testCircular" : "smalltalkCI 11/24/2016 23:41",
 		"testFloats" : "SvenVanCaekenberghe 3/15/2016 14:55",
 		"testIntegers" : "SvenVanCaekenberghe 3/15/2016 14:51",
 		"testLists" : "SvenVanCaekenberghe 3/15/2016 14:59",
-		"testMaps" : "SvenVanCaekenberghe 3/15/2016 15:05",
+		"testMaps" : "smalltalkCI 11/24/2016 23:43",
 		"testNull" : "SvenVanCaekenberghe 3/15/2016 14:52",
-		"testShared" : "SvenVanCaekenberghe 3/15/2016 16:47",
+		"testShared" : "smalltalkCI 11/24/2016 23:41",
 		"testStrings" : "SvenVanCaekenberghe 3/15/2016 17:04",
 		"testUnknown" : "SvenVanCaekenberghe 3/15/2016 16:48" } }

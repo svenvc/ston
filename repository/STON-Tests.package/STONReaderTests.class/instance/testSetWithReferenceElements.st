@@ -2,7 +2,7 @@ tests
 testSetWithReferenceElements
 	| elementsCollection set ston object |
 	elementsCollection := OrderedCollection streamContents: [ :out |
-		10 timesRepeat: [ out nextPut: UUID new ] ].
+		10 timesRepeat: [ out nextPut: Random new next ] ].
 	set := Set withAll: elementsCollection.
 	object := Array with: elementsCollection with: set.
 	ston := STON toStringPretty: object.

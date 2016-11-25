@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"materialize:" : "SvenVanCaekenberghe 5/5/2012 20:03",
+		"runningOnPharo" : "fn 11/25/2016 15:57",
 		"serialize:" : "SvenVanCaekenberghe 5/5/2012 20:04",
 		"serializeAndMaterialize:" : "SvenVanCaekenberghe 5/5/2012 19:55",
 		"serializeAndMaterializeJsonMode:" : "SvenVanCaekenberghe 5/5/2012 19:55",
@@ -15,7 +16,7 @@
 		"testDatesAndTimes" : "SvenVanCaekenberghe 11/19/2016 21:38",
 		"testDomainObject" : "SvenVanCaekenberghe 2/10/2012 20:53",
 		"testEmpty" : "SvenVanCaekenberghe 1/24/2012 10:17",
-		"testFileSystemSupport" : "SvenVanCaekenberghe 5/7/2016 23:35",
+		"testFileSystemSupport" : "fn 11/25/2016 15:57",
 		"testFloats" : "SvenVanCaekenberghe 5/5/2012 19:58",
 		"testIntervals" : "SvenVanCaekenberghe 2/24/2016 14:00",
 		"testJsonMode" : "dkh 4/29/2012 08:48:15",

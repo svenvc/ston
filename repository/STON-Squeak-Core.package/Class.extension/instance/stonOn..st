@@ -1,4 +1,4 @@
-*ston-core
+*ston-squeak-core
 stonOn: stonWriter
 	stonWriter 
 		writeObject: self 

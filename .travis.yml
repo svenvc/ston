@@ -7,7 +7,15 @@ smalltalk:
   - Pharo-4.0
   - Pharo-3.0
 
+  - Squeak-trunk
+  - Squeak-5.1
+  - Squeak-5.0
+  - Squeak-4.6
+  - Squeak-4.5
+
 matrix:
   allow_failures:
+    - smalltalk: Squeak-trunk
+    - smalltalk: Squeak-5.1
     - smalltalk: Pharo-alpha
   fast_finish: true

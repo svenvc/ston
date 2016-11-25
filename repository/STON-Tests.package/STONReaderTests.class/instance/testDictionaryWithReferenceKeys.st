@@ -2,7 +2,7 @@ tests
 testDictionaryWithReferenceKeys
 	| keysCollection dictionary ston object |
 	keysCollection := OrderedCollection streamContents: [ :out |
-		10 timesRepeat: [ out nextPut: UUID new ] ].
+		10 timesRepeat: [ out nextPut: Random new next ] ].
 	dictionary := Dictionary new.
 	keysCollection doWithIndex: [ :each :index | 
 		dictionary at: each put: index ].

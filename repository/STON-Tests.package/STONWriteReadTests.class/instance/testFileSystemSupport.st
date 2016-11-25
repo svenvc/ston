@@ -1,6 +1,7 @@
 tests
 testFileSystemSupport
 	| fileReferences fileLocators |
+	self runningOnPharo ifFalse: [^self].
 	fileReferences := STON listClass withAll: { 
 		FileLocator image asFileReference.
 		FileLocator workingDirectory asFileReference.

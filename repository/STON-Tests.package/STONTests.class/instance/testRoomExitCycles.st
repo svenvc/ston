@@ -26,4 +26,4 @@ testRoomExitCycles
 	self assert: ((object second at: #exit) at: #origin) == object second.
 	self assert: ((object second at: #exit) at: #destination) == object first.
 	"Try writing again the parse model" 
-	self assert: (STON toString: object) equals: ston
+	self assert: (STON toString: object) sorted equals: ston sorted "(sorted to ignore order)"
