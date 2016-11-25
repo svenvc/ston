@@ -1,3 +1,3 @@
-*ston-core
+*ston-pharo-core
 stonName
 	^ #Class
