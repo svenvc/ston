@@ -16,6 +16,5 @@ smalltalk:
 matrix:
   allow_failures:
     - smalltalk: Squeak-trunk
-    - smalltalk: Squeak-5.1
     - smalltalk: Pharo-alpha
   fast_finish: true

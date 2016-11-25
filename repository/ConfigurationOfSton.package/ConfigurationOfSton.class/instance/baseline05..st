@@ -25,4 +25,11 @@ baseline05: spec
 				with: [ spec includes: #('STON-Squeak-Core') ];
 			package: 'STON-Squeak-Core'
 				with: [ spec requires: #('STON-Core') ] ].
+
+	spec for: #(#'squeak4.x' #'squeak5.0') do: [
+		spec
+			package: 'STON-Squeak-Core'
+				with: [ spec includes: #('STON-Squeak45-Core') ];
+			package: 'STON-Squeak45-Core'
+				with: [ spec requires: #('STON-Squeak-Core') ] ].
 		
