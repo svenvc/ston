@@ -1,4 +1,4 @@
-*ston-core
+*ston-pharo-core
 fromSton: stonReader
 	"My instances are stored as maps."
 	
