@@ -1,6 +1,7 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"materialize:" : "SvenVanCaekenberghe 6/9/2015 10:12",
-		"serialize:" : "SvenVanCaekenberghe 6/9/2015 10:16" } }
+		"serialize:" : "SvenVanCaekenberghe 6/9/2015 10:16",
+		"materialize:" : "SvenVanCaekenberghe 6/9/2015 10:12"
+	},
+	"class" : { }
+}

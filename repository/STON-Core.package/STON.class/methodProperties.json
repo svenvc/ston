@@ -1,23 +1,24 @@
 {
+	"instance" : { },
 	"class" : {
-		"associationClass" : "SvenVanCaekenberghe 8/15/2015 17:11",
-		"classNameKey" : "SvenVanCaekenberghe 8/12/2014 15:04",
-		"fromStream:" : "SvenVanCaekenberghe 1/24/2012 09:39",
-		"fromStreamWithComments:" : "SvenVanCaekenberghe 6/9/2015 10:03",
-		"fromString:" : "SvenVanCaekenberghe 1/24/2012 09:40",
 		"fromStringWithComments:" : "SvenVanCaekenberghe 6/9/2015 10:03",
+		"toStringPretty:" : "SvenVanCaekenberghe 2/12/2012 19:30",
+		"reader" : "SvenVanCaekenberghe 1/24/2012 09:37",
+		"put:onStream:" : "SvenVanCaekenberghe 1/24/2012 09:49",
 		"jsonWriter" : "SvenVanCaekenberghe 3/15/2016 14:40",
-		"listClass" : "SvenVanCaekenberghe 1/24/2012 09:36",
-		"mapClass" : "SvenVanCaekenberghe 1/24/2012 09:36",
+		"classNameKey" : "SvenVanCaekenberghe 8/12/2014 15:04",
+		"associationClass" : "SvenVanCaekenberghe 8/15/2015 17:11",
+		"put:onStreamPretty:" : "SvenVanCaekenberghe 2/12/2012 19:30",
+		"fromStream:" : "SvenVanCaekenberghe 1/24/2012 09:39",
 		"put:asJsonOnStream:" : "SvenVanCaekenberghe 5/30/2012 22:06",
 		"put:asJsonOnStreamPretty:" : "SvenVanCaekenberghe 5/30/2012 22:07",
-		"put:onStream:" : "SvenVanCaekenberghe 1/24/2012 09:49",
-		"put:onStreamPretty:" : "SvenVanCaekenberghe 2/12/2012 19:30",
-		"reader" : "SvenVanCaekenberghe 1/24/2012 09:37",
+		"fromString:" : "SvenVanCaekenberghe 1/24/2012 09:40",
+		"mapClass" : "SvenVanCaekenberghe 1/24/2012 09:36",
+		"fromStreamWithComments:" : "SvenVanCaekenberghe 6/9/2015 10:03",
+		"listClass" : "SvenVanCaekenberghe 1/24/2012 09:36",
 		"toJsonString:" : "SvenVanCaekenberghe 5/30/2012 22:07",
-		"toJsonStringPretty:" : "SvenVanCaekenberghe 5/30/2012 22:07",
 		"toString:" : "SvenVanCaekenberghe 1/24/2012 09:49",
-		"toStringPretty:" : "SvenVanCaekenberghe 2/12/2012 19:30",
-		"writer" : "SvenVanCaekenberghe 1/24/2012 09:37" },
-	"instance" : {
-		 } }
+		"writer" : "SvenVanCaekenberghe 1/24/2012 09:37",
+		"toJsonStringPretty:" : "SvenVanCaekenberghe 5/30/2012 22:07"
+	}
+}

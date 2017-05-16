@@ -3,7 +3,7 @@ encodeCharacter: char
 	| code encoding |
 	"STONCharacters contains for the lower 127 characters (codes 0 to 126) either nil (unknown), 
 	#pass (output as is, clean ASCII characters) or a full escape string"
-	((code := char codePoint) < 127 and: [ (encoding := STONCharacters at: code + 1) notNil ])
+	((code := char codePoint) < 127 and: [ (encoding := self stonCharacters at: code + 1) notNil ])
 		ifTrue: [ 
 			(encoding = #pass or: [ jsonMode and: [ char = $' ] ])
 				ifTrue: [ writeStream nextPut: char ]

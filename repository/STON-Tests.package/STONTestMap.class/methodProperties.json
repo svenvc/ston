@@ -1,9 +1,12 @@
 {
+	"instance" : {
+		"printElementsOn:" : "SvenVanCaekenberghe 11/29/2012 21:32"
+	},
 	"class" : {
-		"classTree" : "SvenVanCaekenberghe 11/29/2012 22:34",
 		"classTree:" : "SvenVanCaekenberghe 11/29/2012 22:35",
 		"classTreeExtended" : "SvenVanCaekenberghe 11/29/2012 22:34",
+		"classTree" : "SvenVanCaekenberghe 11/29/2012 22:34",
 		"classTreeExtended:" : "SvenVanCaekenberghe 11/30/2012 08:55",
-		"stonName" : "SvenVanCaekenberghe 11/29/2012 21:18" },
-	"instance" : {
-		"printElementsOn:" : "SvenVanCaekenberghe 11/29/2012 21:32" } }
+		"stonName" : "SvenVanCaekenberghe 11/29/2012 21:18"
+	}
+}

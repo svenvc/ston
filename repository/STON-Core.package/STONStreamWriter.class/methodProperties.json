@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"on:" : "SvenVanCaekenberghe 1/24/2012 09:29" },
 	"instance" : {
 		"initialize" : "SvenVanCaekenberghe 1/24/2012 09:30",
-		"on:" : "SvenVanCaekenberghe 1/24/2012 09:29" } }
+		"on:" : "SvenVanCaekenberghe 1/24/2012 09:29"
+	},
+	"class" : {
+		"on:" : "SvenVanCaekenberghe 1/24/2012 09:29"
+	}
+}

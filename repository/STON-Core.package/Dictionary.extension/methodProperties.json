@@ -1,6 +1,9 @@
 {
-	"class" : {
-		"fromSton:" : "SvenVanCaekenberghe 2/12/2012 14:59" },
 	"instance" : {
-		"stonOn:" : "SvenVanCaekenberghe 2/12/2012 14:58",
-		"stonPostReferenceResolution" : "SvenVanCaekenberghe 4/14/2016 13:55" } }
+		"stonPostReferenceResolution" : "SvenVanCaekenberghe 4/14/2016 13:55",
+		"stonOn:" : "SvenVanCaekenberghe 2/12/2012 14:58"
+	},
+	"class" : {
+		"fromSton:" : "SvenVanCaekenberghe 2/12/2012 14:59"
+	}
+}

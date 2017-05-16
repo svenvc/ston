@@ -1,6 +1,7 @@
 {
-	"class" : {
-		 },
 	"instance" : {
-		"stonContainSubObjects" : "SvenVanCaekenberghe 11/29/2012 16:27",
-		"stonOn:" : "SvenVanCaekenberghe 1/14/2012 15:54" } }
+		"stonOn:" : "SvenVanCaekenberghe 1/14/2012 15:54",
+		"stonContainSubObjects" : "SvenVanCaekenberghe 11/29/2012 16:27"
+	},
+	"class" : { }
+}

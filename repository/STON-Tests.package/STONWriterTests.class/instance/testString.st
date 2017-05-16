@@ -7,4 +7,4 @@ testString
 	self assert: (self serialize: 'élève en Français') = '''élève en Français'''.
 	string := String withAll: { 
 		$". $'. $\. $/. Character tab. Character cr. Character lf.  Character newPage. Character backspace }.
-	self assert: (self serialize: string) equals: '''\"\''\\\/\t\r\n\f\b'''.
+	self assert: (self serialize: string) equals: '''"\''\\/\t\r\n\f\b'''.
