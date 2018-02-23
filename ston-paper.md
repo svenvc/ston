@@ -143,16 +143,16 @@ Numbers are either integers or floats.
 Integers can be of infinite precision. 
 Floats can be simple fractions or use the full scientific base 10 exponent notation.
 
-Strings are enclosed using single quotes.
-A backslash is used as an escape mechanism.
-Some unreadable characters have there own escape code, like in JSON.
+Strings are enclosed using single quotes `'`.
+A backslash `\` is used as an escape mechanism.
+Some unreadable characters have their own escape code, like in JSON.
 A general Unicode escape mechanism using four hexadecimal digits
 is used to encode any character.
 STON conventionally encodes all non-printable non-ASCII characters.
 
-Symbols are introduced by a sharp sign.
+Symbols are introduced by a sharp sign `#`.
 Symbols consisting of a limited character set (letters, numbers,
-a dot, underscore, dash or forward slash) are written literally.
+a dot `.`, underscore `_`, dash `-` or forward slash `/`) are written literally.
 Symbols containing characters outside this limited set
 are encoded like strings, enclosed in single quotes.
 
@@ -199,7 +199,7 @@ To support shared objects and cycles in the object graph,
 STON adds the concept of references.
 Each object value encountered during depth first traversal is numbered from 1 up.
 If a object is encountered again, only a reference to its number is recorded.
-References consist of the at-sign followed by a positive integer.
+References consist of the at-sign `@` followed by a positive integer.
 After reconstructing an object graph, references are resolved.
 Here is an OrderedCollection with three times the same, shared Point object:
 
