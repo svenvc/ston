@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "STONWriteReadTests",
 	"category" : "STON-Tests",
 	"classinstvars" : [ ],

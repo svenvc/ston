@@ -1,9 +1,9 @@
 {
 	"instance" : {
-		"stonShouldWriteNilInstVars" : "SvenVanCaekenberghe 11/13/2013 23:54"
+		"stonShouldWriteNilInstVars" : ""
 	},
 	"class" : {
-		"stonName" : "SvenVanCaekenberghe 11/20/2016 20:17",
-		"stonAllInstVarNames" : "SvenVanCaekenberghe 11/27/2014 11:10"
+		"stonName" : "",
+		"stonAllInstVarNames" : ""
 	}
 }
