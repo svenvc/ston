@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "STON-Core",
+	"category" : "STON-Core-Facade",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

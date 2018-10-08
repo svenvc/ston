@@ -1,4 +1,4 @@
-I am STONTestKnownObject.
+I am STONTestKnownObject. I support unit tests.
 
 I have an id and a description.
 

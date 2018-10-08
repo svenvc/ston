@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "STONTestUser",
-	"category" : "STON-Tests",
+	"category" : "STON-Tests-Support",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

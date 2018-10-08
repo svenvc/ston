@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "STONStreamWriter",
-	"category" : "STON-Core",
+	"category" : "STON-Core-Writer",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
