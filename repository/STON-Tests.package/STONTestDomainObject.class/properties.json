@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "SvenVanCaekenberghe 2/10/2012 20:25",
+	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "STON-Tests",
+	"category" : "STON-Tests-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

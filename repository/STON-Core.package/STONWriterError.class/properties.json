@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Error",
-	"category" : "STON-Core",
+	"category" : "STON-Core-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

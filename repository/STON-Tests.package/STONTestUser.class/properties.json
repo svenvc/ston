@@ -1,7 +1,7 @@
 {
-	"commentStamp" : "<historical>",
+	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "STON-Tests",
+	"category" : "STON-Tests-Base",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

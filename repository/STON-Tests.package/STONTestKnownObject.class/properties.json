@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 5/17/2017 13:36",
+	"super" : "Object",
+	"category" : "STON-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"KnownObjects"
+	],
+	"instvars" : [
+		"id",
+		"description"
+	],
+	"name" : "STONTestKnownObject",
+	"type" : "normal"
+}
