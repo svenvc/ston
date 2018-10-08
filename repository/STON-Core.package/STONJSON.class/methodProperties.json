@@ -1,11 +1,11 @@
 {
 	"instance" : { },
 	"class" : {
-		"fromStream:" : "SvenVanCaekenberghe 3/15/2016 14:28",
-		"toString:" : "SvenVanCaekenberghe 3/15/2016 14:30",
-		"put:onStreamPretty:" : "SvenVanCaekenberghe 3/15/2016 14:30",
-		"fromString:" : "SvenVanCaekenberghe 3/15/2016 14:28",
-		"toStringPretty:" : "SvenVanCaekenberghe 3/15/2016 14:30",
-		"put:onStream:" : "SvenVanCaekenberghe 3/15/2016 14:30"
+		"fromStream:" : "",
+		"toString:" : "",
+		"put:onStreamPretty:" : "",
+		"fromString:" : "",
+		"toStringPretty:" : "",
+		"put:onStream:" : ""
 	}
 }

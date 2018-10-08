@@ -1,6 +1,8 @@
 {
-	"instance" : { },
+	"instance" : {
+		"stonOn:" : ""
+	},
 	"class" : {
-		"fromSton:" : "SvenVanCaekenberghe 12/24/2015 20:58"
+		"fromSton:" : ""
 	}
 }

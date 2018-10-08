@@ -1,10 +1,10 @@
 {
 	"instance" : {
-		"messageText" : "SvenVanCaekenberghe 12/13/2013 16:12",
-		"streamPosition" : "DamienCassou 12/9/2013 10:00",
-		"streamPosition:" : "DamienCassou 12/9/2013 10:00"
+		"messageText" : "",
+		"streamPosition" : "",
+		"streamPosition:" : ""
 	},
 	"class" : {
-		"signal:streamPosition:" : "DamienCassou 12/9/2013 10:04"
+		"signal:streamPosition:" : ""
 	}
 }
