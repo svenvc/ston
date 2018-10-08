@@ -4,7 +4,7 @@ baseline02: spec
 
 	spec for: #'common' do: [
 		spec blessing: #'baseline'.
-		spec repository: 'http://ss3.gemstone.com/ss/STON'.
+		spec repository: 'http://ss3.gemtalksystems.com/ss/STON'.
 		spec
 			package: 'STON-Core';
 			package: 'STON-Tests' ].

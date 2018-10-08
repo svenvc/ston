@@ -1,5 +1,8 @@
 language: smalltalk
-sudo: false
+sudo: required
+
+os:
+  - linux
 
 smalltalk:
   - Pharo64-7.0
@@ -7,6 +10,3 @@ smalltalk:
   - Pharo-6.1
   - Pharo-6.0
   - Pharo-5.0
-
-matrix:
-  fast_finish: true
