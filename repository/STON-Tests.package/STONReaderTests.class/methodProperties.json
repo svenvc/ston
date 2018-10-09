@@ -1,8 +1,9 @@
 {
 	"instance" : {
 		"testNull" : "",
-		"testNil" : "",
+		"testScaledDecimal" : "SvenVanCaekenberghe 10/9/2018 20:59",
 		"testInteger" : "",
+		"testNil" : "",
 		"testDateAndTime" : "",
 		"testList" : "",
 		"testOrderedCollection" : "",
@@ -40,6 +41,7 @@
 		"testIdentityDictionary" : "",
 		"testUser2" : "",
 		"testSetWithReferenceElements" : "",
+		"testFraction" : "SvenVanCaekenberghe 10/9/2018 20:59",
 		"testStreaming" : "",
 		"testReferenceSharing" : "",
 		"testBoolean" : "",
