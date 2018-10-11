@@ -1,9 +1,9 @@
 {
 	"instance" : {
 		"testNull" : "",
-		"testScaledDecimal" : "SvenVanCaekenberghe 10/9/2018 20:59",
-		"testInteger" : "",
 		"testNil" : "",
+		"testInteger" : "",
+		"testScaledDecimal" : "SvenVanCaekenberghe 10/9/2018 20:59",
 		"testDateAndTime" : "",
 		"testList" : "",
 		"testOrderedCollection" : "",
@@ -20,6 +20,7 @@
 		"testNewSymbol" : "",
 		"testWhitespace" : "",
 		"testDate" : "SvenVanCaekenberghe 10/11/2018 12:05",
+		"testColor" : "SvenVanCaekenberghe 10/11/2018 15:58",
 		"testString" : "",
 		"testError" : "",
 		"testPoint" : "",
