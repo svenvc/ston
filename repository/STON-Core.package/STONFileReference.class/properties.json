@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 10/11/2018 23:06",
+	"super" : "FileReference",
+	"category" : "STON-Core-Reader",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "STONFileReference",
+	"type" : "normal"
+}

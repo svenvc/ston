@@ -4,9 +4,7 @@ fromSton: stonReader
 	representation := stonReader parseSimpleValue.
 	^ representation isArray
 		ifTrue: [ 
-			representation first isSymbol 
-				ifTrue: [ self named: representation first ]
-				ifFalse: [ self fromHexString: representation first ] ]
+			self named: representation first ]
 		ifFalse: [ 
 			self 
 				r: (representation at: #red) 

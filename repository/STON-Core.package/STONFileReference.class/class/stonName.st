@@ -1,0 +1,3 @@
+ston
+stonName
+	^ 'FILE'
