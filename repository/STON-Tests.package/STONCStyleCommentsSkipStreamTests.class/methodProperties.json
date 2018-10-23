@@ -2,6 +2,7 @@
 	"instance" : {
 		"testSTON" : "",
 		"testCommentInString" : "",
+		"testBlockReading" : "SvenVanCaekenberghe 10/22/2018 16:47",
 		"testNonComment" : "",
 		"testSingleLineComment" : "",
 		"testMultiLineComment" : ""

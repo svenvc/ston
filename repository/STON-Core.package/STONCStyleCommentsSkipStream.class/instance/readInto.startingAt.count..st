@@ -4,16 +4,11 @@ readInto: collection startingAt: offset count: requestedCount
 	Return the number of elements actually read."
 	
 	^ peekedCharacter 
-		ifNil: [ | readCount |
-			[ readCount := self encoder 
-					readInto: collection 
-					startingAt: offset 
-					count: requestedCount 
-					fromStream: stream ]
-				on: ZnByteStringBecameWideString 
-				do: [ :byteStringBecameWideString | 
-					byteStringBecameWideString becomeForward; resume ].
-			readCount ]
+		ifNil: [
+			0 to: requestedCount - 1 do: [ :count | | object |
+				(object := self nextNonCommentChar) ifNil: [ ^ count ].  
+				collection at: offset + count put: object ].
+			^ requestedCount ]
 		ifNotNil: [ 
 			collection at: offset put: peekedCharacter.
 			peekedCharacter := nil.
