@@ -12,8 +12,11 @@ It adds symbols as a primitive value, class tags for object values and reference
 Implementations for Pharo Smalltalk, Squeak and Gemstone Smalltalk are available.
 
 
-## Please read the [Smalltalk Object Notation](https://github.com/svenvc/ston/blob/master/ston-paper.md) paper
+## Documentation
 
+The original [Smalltalk Object Notation](https://github.com/svenvc/ston/blob/master/ston-paper.md) paper
+
+The Pharo Enterprise book [STON](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/STON/STON.html) chapter
 
 *Sven Van Caekenberghe* 
 [MIT Licensed](https://github.com/svenvc/ston/blob/master/license.txt)
