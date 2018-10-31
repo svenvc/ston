@@ -4,18 +4,17 @@
 
 *First version: October 30, 2018*
 
-*Draft*
-
-*Last update: October 30, 2018*
+*Last update: October 31, 2018*
 
 
 STON, short for Smalltalk Object Notation, is a lightweight, text-based human-readable data interchange format for class-based object-oriented languages like Smalltalk.
 
 It can be used to serialise domain level objects, either for persistency or network transport. By offering class tags for objects as well as support for object references, arbitrary object graphs can we written and read back.
 
-With conventions to use simpler representations for common value objects and broader primitive support, STON becomes both more compact and more readable.
+With conventions to use simpler representations for common value objects and comprehensive primitive support, STON is both compact and readable.
 
-STON was created in 2012 and is in active use in various Smalltalk systems, most notably in Pharo. The original documentation was the [Smalltalk Object Notation](https://github.com/svenvc/ston/blob/master/ston-paper.md) paper. The Pharo Enterprise book written in 2015 has an [STON](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/STON/STON.html) chapter. This document is meant to be the authoritative specification of STON as a data format, independent from its implementation.  
+STON was created in 2012 and is in active use in various Smalltalk systems, most notably in Pharo. The original documentation was the [Smalltalk Object Notation](https://github.com/svenvc/ston/blob/master/ston-paper.md) paper. The Pharo Enterprise book, written in 2015, has an [STON](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/STON/STON.html) chapter. This document is meant to be the authoritative specification of STON as a data format, independent from its implementation.
+
 
 ## Example
 
@@ -29,7 +28,7 @@ Here is an example STON object, a user with some fields.
 	    #lastLogin : DateAndTime [ '2018-10-30T15:01:13.364516+01:00' ],
 	    #loginCount: 42 }
 
-Class tags indicate the type of an object. In the example, DoomUser, ByteArray, URL and DateAndTime are used. Curly braces delineate maps containing key:value associations, most often used for the properties of an object. Square brackets delineate lists, like the roles array. A hash tag starts a symbol, strings use single quotes. Some objects have custom representations to make them easier to read and edit: ByteArray uses a hex string, while URL and DateAndTime use their natural RFC and ISO forms.
+Class tags indicate the type of an object. In the example, DoomUser, ByteArray, URL and DateAndTime are used. Curly braces delineate maps containing key:value associations, most often used for the properties of an object. Square brackets delineate lists, like the roles array. A hash tag starts a symbol while strings use single quotes. Some objects have custom representations to make them easier to read and edit: ByteArray uses a hex string, while URL and DateAndTime use their natural RFC and ISO forms.
 
 
 ##  Basics
@@ -44,7 +43,7 @@ STON is a textual format. The stream or file containing STON uses UTF-8 characte
 
 Whitespace is not significant. Pretty printing STON does not alter its semantics. Any line end convention can be used.
 
-By default, significant - inside strings or symbols - unescaped, raw newlines in any convention are preserved as is. A reader could offer the option to convert those significant unescaped newlines to a specific convention. Similarly, a writer could convert significant newlines in any convention to a specific convention and output them unescaped. The default is to leave them as is and to escape them.
+By default, significant - inside strings or symbols - unescaped, raw newlines in any convention are preserved as is. A reader could offer the option to convert those significant unescaped newlines to a specific convention. Similarly, a writer could convert significant newlines in any convention to a specific convention and output them unescaped. The default is to leave them as they are and to escape them.
 
 
 ### Comments
@@ -79,7 +78,7 @@ The following character classes are not directly used in any rules but are used 
 
 ## The STON Object Graph
 
-STON describes a single, self-contained object graph. Normally a stream or file contains one such graph.
+STON describes a single, self-contained object graph. Normally a stream or file contains one such graph. At the top level, STON can be any of six things: a primitive, list, association, map, object or reference.
 
     ston = primitive | list | association | map | object | reference
 
@@ -87,7 +86,7 @@ It is also possible to write or read multiple, independent, self-contained objec
 
 No header nor version information is added to STON output.
 
-The filename extension for STON is ".ston". There is no official mime type for STON, but "text/ston" and/or "application/ston" would seem logical.
+The filename extension for STON is usually ".ston". There is no official mime type for STON, but "text/ston" and/or "application/ston" would seem logical.
 
 
 ## Primitives
@@ -101,7 +100,7 @@ Unless otherwise noted, literals are case sensitive, favouring lowercase.
 
 ### Numbers
 
-There are four different kinds of numbers in STON, integers, fractions, scaled decimals and floats.
+There are four different kinds of numbers in STON: integers, fractions, scaled decimals and floats.
 
     number = integer | fraction | scaled-decimal | float
 
@@ -164,7 +163,7 @@ Functionally, only the first 2 escape sequences are required. It is only possibl
 
 Any other Unicode character could occur in its raw form and will be accepted as part of the string. However, an STON writer should always use the 5 named escapes, b, f, n, r and t as well as a Unicode escape for any control characters (most notably the ASCII control characters). An STON reader should also accept the 2 optional escapes for double quote and forward slash.
 
-A Unicode escape consists of a lowercase "u" followed by 4 hexadecimal digits. A writer should use uppercase hex digits but  a reader should accept both lower and uppercase hex digits.
+A Unicode escape consists of a lowercase "u" followed by 4 hexadecimal digits. Both uppercase and lowercase hex digits can be used and should be accepted.
 
 For Unicode characters with code points that do not fit in the 0 to FFFF range, UTF-16 surrogate pairs are used. For example, the character "MUSICAL SYMBOL G CLEF" with code point 119070 decimal, 1D11E hex, is encoded with 2 escapes: \\uD834\\uDD1E.
 
@@ -184,12 +183,12 @@ By default significant newlines inside strings in any convention (cr, lf, crlf) 
 
 ### Symbols
 
-Symbols are strings that unique in a specific object space. They are maintained through a symbol table. STON has direct support for symbols as a primitive type. There are 2 variants for literal symbols, both starting with a hash sign:
+Symbols are strings that are unique in a specific object space. They are maintained through a symbol table. STON has direct support for symbols as a primitive type. There are 2 variants for literal symbols, both starting with a hash sign:
 
 - simple symbols using a limited character set
 - arbitrary symbols
 
-The limited character set consists of the standard upper and lowercase letters, the digits and 4 punctuation characters ("-",  "_", "." and "/"). To encode arbitrary symbols, a string is used.
+The limited character set consists of the standard upper and lowercase letters, the decimal digits and 4 punctuation characters ("-",  "_", "." and "/"). To encode arbitrary symbols, a string is used.
 
     simple-symbol-char = uppercase-letter | lowercase-letter | decimal-digit | "-" | "_" | "." | "/"
     simple-symbol = "#" simple-symbol-char
@@ -199,18 +198,18 @@ The limited character set consists of the standard upper and lowercase letters, 
 
 ### Booleans
 
-STON has the standard boolean literals, true and false.
+STON has the standard boolean literals, true and false, always in lowercase.
 
     boolean = "true" | "false"
 
 
 ### The Undefined Object
 
-STON has a special literal for the undefined object, nil.
+STON has a special literal for the undefined object, nil, in lowercase.
 
     nil = "nil"
 
-The undefined object can occur anywhere a regular object is expected, inside lists, maps and objects.
+The undefined object can occur anywhere a regular object is expected, inside lists, maps, associations and objects.
 
 
 ## Lists
@@ -229,7 +228,7 @@ Associations are key/value pairs. Both the key and the value can be any STON val
 
     association = ston ":" ston
 
-The above shorthand notation is functionally equivalent to an object with class tag "Association" and the properties "key" and  "value".
+The above shorthand notation is functionally equivalent to an object with class tag "Association" and the properties "key" and  "value". There are no restrictions on keys nor on values.
 
 
 ## Maps
@@ -241,12 +240,12 @@ A map is an unordered collection of associations forming an associative lookup t
 
 The associations that constitute a map are separated by commas. A map can also be empty. A map is functionally equivalent to an object with class tag "Dictionary" using as representation the associations listed.
 
-No order is maintained and when duplicate keys occur, the behaviour is undefined but no error is signalled. Currently, duplicate keys overwrite each other in the order they are read. To maintain an order, an OrderedDictionary can be used. 
+No order is maintained and when duplicate keys occur, the behaviour is undefined but no error is signalled. Currently, duplicate keys overwrite each other in the order they are read. To maintain an order, an OrderedDictionary can be used. Duplicate keys should not occur.
 
 
 ## Objects
 
-An object consists of a class tag followed by a representation. Class tags start with an uppercase letter and use a limited charset.
+An object consists of a class tag followed by a representation. Class tags start with an uppercase letter and use a limited charset: upper and lowercase letter, decimal digits and the underscore character.
 
 	class-tag-char = uppercase-letter | lowercase-letter | decimal-digit | "_"
 	class-tag = uppercase-letter class-tag-char *
@@ -255,16 +254,16 @@ An object consists of a class tag followed by a representation. Class tags start
 
 The standard default STON encoding of arbitrary non-variable objects is to use a map with all non nil named instance variables and their values.
 
-The standard default STON encoding of collection objects is to use a list with element values.
+The standard default STON encoding of collection objects is to use a list with the element values.
 
-Note that an object representation is always a list or a map.
+Note that an object representation is always either a list or a map.
 
 
 ## References
 
-Inside an object graph, both shared structures and circular references can occur. STON remembers and checks object references (pointers) while writing and replaces already encountered objects with a reference. While reading, the inverse process occurs: references are replace by the object they refer to.
+Inside an object graph, both shared structures and circular references can occur. STON remembers and checks object references (pointers) while writing and replacing already encountered objects with a reference. While reading, the inverse process occurs: references are replace by the object they refer to.
 
-STON traverses an object graph in depth first order. The order at each level, basically each object's named instance variables or collection elements, is defined by the writer and maintained as such in the STON being written.
+STON traverses an object graph in depth first order. The order at each level, basically each object's named instance variables or collection elements, is defined by the writer and preserved as such in the STON being written.
 
 Objects in the graph are numbered from 1 up in the order they are encountered. This number is used in a reference.
 
@@ -281,7 +280,7 @@ Additionally, special care must be taken to maintain the health of data structur
 
 ## Custom Representations
 
-STON defines some conventions to use simpler representations for common value objects to produce both more compact and more readable output. Note that these custom representations do not add any new syntax, these are just objects. Some are required, the others are highly recommended. Implementations that lack certain target classes could use placeholders. Class tags do not necessarily have to correspond to actual classes.
+STON defines some conventions to use simpler representations for common value objects to produce both compact and readable output. Note that these custom representations do not add any new syntax, these are just objects. Some are required, the others are highly recommended. Implementations that lack certain target classes could use placeholders. Class tags do not necessarily have to correspond to actual classes.
 
 
 ### Class
@@ -308,7 +307,7 @@ ByteArrays, used for opaque binary data, are represented with a singleton list c
 
 ### Point
 
-The classic 2 dimensional point is represented with a 2 element list, normally containing 2 numbers.
+The classic 2 dimensional point is represented with a 2 element list, normally containing 2 numbers, the x and y component.
 
     Point [ 5, 10 ]
 
@@ -385,17 +384,17 @@ Whitespace can occur between all syntactic elements, leaving room for optional p
 
 ## JSON Compatibility
 
-STON is backwards compatible with JSON in the sense that an STON reader will accept JSON. In particular:
+STON is backwards compatible with JSON in the sense that an STON reader will transparently accept JSON. In particular:
 
 - STON accepts double quotes are string and symbol delimiters
 - STON accepts null as an alternative to nil
 
 An STON writer can be configured to output JSON. In particular:
 
+- Double quotes will be used to delimit strings
+- Null will be used instead of nil
 - Fractions and Scaled Decimals are written as floats
 - Symbols will be written as strings
-- Null will be used instead of nil
-- Double quotes will be used to delimit strings
 - Only Arrays and Dictionaries are allowed as composites
 - Shared references in the object graph will be doubled
 - Circular reference in the object graph will raise an error

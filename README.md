@@ -18,5 +18,7 @@ The original [Smalltalk Object Notation](https://github.com/svenvc/ston/blob/mas
 
 The Pharo Enterprise book [STON](https://ci.inria.fr/pharo-contribution/job/EnterprisePharoBook/lastSuccessfulBuild/artifact/book-result/STON/STON.html) chapter
 
+The most formal description is [The STON Specification](https://github.com/svenvc/ston/blob/master/ston-spec.md)
+
 *Sven Van Caekenberghe* 
 [MIT Licensed](https://github.com/svenvc/ston/blob/master/license.txt)
