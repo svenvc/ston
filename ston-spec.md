@@ -267,7 +267,7 @@ STON traverses an object graph in depth first order. The order at each level, ba
 
 Objects in the graph are numbered from 1 up in the order they are encountered. This number is used in a reference.
 
-    reference = "@" postive-integer
+    reference = "@" positive-integer
 
 The order and numbering are only consistent and defined for a single object graph as written by a specific system. Given a specific STON object graph, any compatible system is capable of reading it and resolving all references as this does not depend on any local ordering in the receiving system.
 
@@ -448,4 +448,4 @@ This section lists all formal syntax rules grouped together in top down order.
     class-tag = uppercase-letter class-tag-char *
     class-tag-char = uppercase-letter | lowercase-letter | decimal-digit | "_"
     object-representation = list | map
-    reference = "@" postive-integer
+    reference = "@" positive-integer
