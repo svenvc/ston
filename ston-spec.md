@@ -4,7 +4,7 @@
 
 *First version: October 30, 2018*
 
-*Last update: October 31, 2018*
+*Last update: January 11, 2019*
 
 
 STON, short for Smalltalk Object Notation, is a lightweight, text-based human-readable data interchange format for class-based object-oriented languages like Smalltalk.
