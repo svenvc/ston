@@ -283,9 +283,34 @@ Additionally, special care must be taken to maintain the health of data structur
 STON defines some conventions to use simpler representations for common value objects to produce both compact and readable output. Note that these custom representations do not add any new syntax, these are just objects. Some are required, the others are highly recommended. Implementations that lack certain target classes could use placeholders. Class tags do not necessarily have to correspond to actual classes.
 
 
+### Collections
+
+The general rule for collections is that they are represented by a list of their elements.
+
+    OrderedCollection [ #a, #b, #c ]
+    Set [ #c, #a, #b ]
+
+The elements are obtained by standard enumeration while reconstruction is done by adding each element to an empty instance created upfront. Depending on the type, order is relevant.
+
+For a number of collection subclasses the more natural map representation is chosed.
+
+    OrderedDictionary { #a : 1, #b : 2, #c : 3 }
+
+As noted earlier, Array and Dictionary, and only these exact classes, are treated special, they do not need a class tag since they directly and naturally represent the list and map concepts.
+
+    [ #a, #b, #c ]
+    { #a : 1, #b : 2, #c : 3 }
+
+There are quite a few exceptions to this general rule in the collection hierarchy. Some more primitive types that happen to be collection subclasses are treated differently for obvious reasons: String, Symbol and ByteArray.
+
+Some others are too special to be captured accurately as just a plain list of elements. Most of them revert back to general object behavior and use their instance variables as their representation like any STON object. Among them are Bag, Interval, RunArray and Text.
+
+The list of exceptions is necessarily open ended, since new collection subclasses can be created freely.
+
+
 ### Class
 
-Since class objects are complex and implementation dependent, STON represents classes using a singleton list with their symbol  name.
+Since class objects are complex and implementation dependent, STON represents classes using a singleton list with their symbol name.
 
     Class [ #ClassName ]
 
