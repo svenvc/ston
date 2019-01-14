@@ -301,9 +301,9 @@ As noted earlier, Array and Dictionary, and only these exact classes, are treate
     [ #a, #b, #c ]
     { #a : 1, #b : 2, #c : 3 }
 
-There are quite a few exceptions to this general rule in the collection hierarchy. Some more primitive types that happen to be collection subclasses are treated differently for obvious reasons: String, Symbol and ByteArray.
+There are quite a few exceptions to this general rule in the collection hierarchy. Some more primitive types that happen to be collection subclasses are treated differently for obvious reasons: String, Symbol and ByteArray. Bag also has a special representation.
 
-Some others are too special to be captured accurately as just a plain list of elements. Most of them revert back to general object behavior and use their instance variables as their representation like any STON object. Among them are Bag, Interval, RunArray and Text.
+Some others are too special to be captured accurately as just a plain list of elements. Most of them revert back to general object behavior and use their instance variables as their representation like any STON object. Among them are Interval, RunArray and Text.
 
 The list of exceptions is necessarily open ended, since new collection subclasses can be created freely.
 
@@ -328,6 +328,13 @@ There is no special or additional literal constant for character objects, the el
 ByteArrays, used for opaque binary data, are represented with a singleton list containing the case independent hex representation.
 
     ByteArray [ 'efbbbf' ]
+
+
+### Bag
+
+Bags are represented by a map containing element/occurrences pairs. This more abstract representation hides the concrete implementation, is shorted and easier for humans to read and write and indicates the unordered nature of Bags.
+
+    Bag { #a : 2, #b : 3 }
 
 
 ### Point
