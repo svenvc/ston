@@ -1,5 +1,7 @@
 *STON-Core
 stonOn: stonWriter
-	"Overwritten to get back the standard object behavior"
+	"Use a map with element-occurences pairs as representation"
 
-	stonWriter writeObject: self
+	stonWriter 
+		writeObject: self 
+		do: [ stonWriter encodeMap: contents ]

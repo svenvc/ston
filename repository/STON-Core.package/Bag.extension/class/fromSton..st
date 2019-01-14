@@ -1,7 +1,9 @@
 *STON-Core
 fromSton: stonReader
-	"Overwritten to get back the standard object behavior"
+	"Read a map representation containing element/occurences pairs"
 	
-	^ self new
-		fromSton: stonReader;
-		yourself
+	| bag |
+	bag := self new.
+	stonReader parseMapDo: [ :key :value |
+		bag add: key withOccurrences: value ].
+	^ bag
