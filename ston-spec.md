@@ -332,7 +332,7 @@ ByteArrays, used for opaque binary data, are represented with a singleton list c
 
 ### Bag
 
-Bags are represented by a map containing element/occurrences pairs. This more abstract representation hides the concrete implementation, is shorted and easier for humans to read and write and indicates the unordered nature of Bags.
+Bags are represented by a map containing element/occurrences pairs. This more abstract representation hides the concrete implementation, is shorter and easier for humans to read and write and indicates the unordered nature of Bags.
 
     Bag { #a : 2, #b : 3 }
 
