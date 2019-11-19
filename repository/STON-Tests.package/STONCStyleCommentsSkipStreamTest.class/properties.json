@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "STONCStyleCommentsSkipStreamTests",
+	"name" : "STONCStyleCommentsSkipStreamTest",
 	"type" : "normal"
 }

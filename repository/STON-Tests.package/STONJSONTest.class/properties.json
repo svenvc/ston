@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "STON-Tests-Writer",
+	"category" : "STON-Tests-Facade",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "STONWriterTests",
+	"name" : "STONJSONTest",
 	"type" : "normal"
 }
