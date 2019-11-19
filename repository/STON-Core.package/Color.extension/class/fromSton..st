@@ -1,7 +1,7 @@
 *ston-core
 fromSton: stonReader
 	| representation |
-	representation := stonReader parseSimpleValue.
+	representation := stonReader parseMapOrListRepresentation.
 	^ representation isArray
 		ifTrue: [ 
 			self named: representation first ]

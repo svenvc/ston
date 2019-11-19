@@ -1,6 +1,7 @@
 private
 isSimpleSymbol: symbol
-	symbol isEmpty ifTrue: [ ^ false ].
+	(symbol isEmpty or: [ symbol isWideString ]) 
+		ifTrue: [ ^ false ].
 	^ (symbol class 
 		findFirstInString: symbol 
 		inSet: STONSimpleSymbolCharacters 
