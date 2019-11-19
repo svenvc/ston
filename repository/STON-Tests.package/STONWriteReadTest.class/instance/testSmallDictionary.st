@@ -4,7 +4,7 @@ testSmallDictionary
 	It might also not exist in some dialects, where this test could be skipped."
 	
 	| dictionaries smallDictionaryClass |
-	smallDictionaryClass := Smalltalk at: #SmallDictionary ifAbsent: [ Dictionary ].
+	smallDictionaryClass := testingEnvironment at: #SmallDictionary ifAbsent: [ Dictionary ].
 	dictionaries := STON listClass withAll: {
 		smallDictionaryClass new at: 1 put: 1; at: 2 put: 2; yourself.
 		smallDictionaryClass new at: 1 put: 1; at: 2 put: 2; yourself.

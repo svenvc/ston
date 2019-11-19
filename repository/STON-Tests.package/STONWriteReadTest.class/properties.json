@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "SvenVanCaekenberghe 10/8/2018 16:52",
-	"super" : "TestCase",
+	"super" : "AbstractEnvironmentTestCase",
 	"category" : "STON-Tests-Write-Read",
 	"classinstvars" : [ ],
 	"pools" : [ ],
