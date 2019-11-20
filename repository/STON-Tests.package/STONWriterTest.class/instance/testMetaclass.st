@@ -1,3 +1,3 @@
 tests
 testMetaclass
-	self assert: (self serialize: Point class) = 'Metaclass[#Point]'
+	self assert: (self serialize: Point class) equals: 'Metaclass[#Point]'

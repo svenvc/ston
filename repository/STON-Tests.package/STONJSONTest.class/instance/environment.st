@@ -1,0 +1,3 @@
+accessing
+environment
+	^ Smalltalk globals

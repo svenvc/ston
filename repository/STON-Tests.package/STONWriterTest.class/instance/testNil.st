@@ -1,3 +1,3 @@
 tests
 testNil
-	self assert: (self serialize: nil) = 'nil'
+	self assert: (self serialize: nil) equals: 'nil'

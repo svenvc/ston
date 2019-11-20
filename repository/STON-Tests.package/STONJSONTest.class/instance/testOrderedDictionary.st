@@ -2,7 +2,7 @@ tests
 testOrderedDictionary
 	| odictClass odict json dict |
 	
-	odictClass := Smalltalk at: #OrderedDictionary ifAbsent: [ ^ self skip ].
+	odictClass := self environment at: #OrderedDictionary ifAbsent: [ ^ self skip ].
 		
 	odict := odictClass newFrom: { 
 		'a' -> 42 . 'b' -> 1. 'aa' -> 4. 'c' -> 23 
@@ -10,9 +10,8 @@ testOrderedDictionary
 	
 	"assert that the order is not equal in the dictionary hash table".	
 	self 
-		assertCollection: odict asArray 
-		hasSameElements: odict dictionary asArray;
-		deny: odict asArray = odict dictionary asArray.
+		assertCollection: odict asArray hasSameElements: odict dictionary asArray;
+		deny: odict asArray equals: odict dictionary asArray.
 		
 	"ordered presevered when encoding:"
 	json := STONJSON toString: odict.
@@ -24,4 +23,4 @@ testOrderedDictionary
 	self 
 		assertCollection: dict asArray hasSameElements: odict asArray;
 		assert: dict equals: odict dictionary;
-		deny: dict asArray = odict asArray
+		deny: dict asArray equals: odict asArray

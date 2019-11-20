@@ -9,4 +9,4 @@ testReferenceSharingIgnore
 				nextPut: object ] ].
 	one := { #one }.
 	array := STON listClass with: one with: one with: one.
-	self assert: (serializer value: array) = '[[#one],[#one],[#one]]'.
+	self assert: (serializer value: array) equals: '[[#one],[#one],[#one]]'.

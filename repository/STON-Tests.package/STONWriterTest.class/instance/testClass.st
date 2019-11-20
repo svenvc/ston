@@ -1,3 +1,3 @@
 tests
 testClass
-	self assert: (self serialize: Point) = 'Class[#Point]'
+	self assert: (self serialize: Point) equals: 'Class[#Point]'
