@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 1/14/2020 13:07",
+	"super" : "ZnUrl",
+	"category" : "STON-Core-Reader",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "STONZnUrl",
+	"type" : "normal"
+}

@@ -1,3 +1,6 @@
 *ston-core
 stonOn: stonWriter
-	stonWriter writeObject: self listSingleton: self asString 
+	stonWriter 
+		writeObject: self 
+		named: STONZnUrl stonName 
+		listSingleton: self asString 
