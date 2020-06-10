@@ -9,4 +9,5 @@ testAlternativeRepresentation
 	resultObject := self materialize: (self serialize: testObject).
 	self assert: resultObject id equals: testObject id.
 	self assert: resultObject time equals: testObject time.
-	self assert: resultObject gridReference closeTo: testObject gridReference.
+	self assert: (resultObject gridReference x closeTo: testObject gridReference x).
+	self assert: (resultObject gridReference y closeTo: testObject gridReference y).
