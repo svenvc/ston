@@ -1,0 +1,3 @@
+accessing
+timeUTC
+	^ time asUTC

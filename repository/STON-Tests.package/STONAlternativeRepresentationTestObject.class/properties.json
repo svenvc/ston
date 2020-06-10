@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "SvenVanCaekenberghe 6/10/2020 18:36",
+	"super" : "Object",
+	"category" : "STON-Tests-Support",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"KnownObjects"
+	],
+	"instvars" : [
+		"id",
+		"time",
+		"gridReference"
+	],
+	"name" : "STONAlternativeRepresentationTestObject",
+	"type" : "normal"
+}
