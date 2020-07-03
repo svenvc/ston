@@ -11,6 +11,14 @@ As its name suggests, it is based on JSON (Javascript Object Notation).
 It adds symbols as a primitive value, class tags for object values and references. 
 Implementations for Pharo Smalltalk, Squeak and Gemstone Smalltalk are available.
 
+## Install
+
+```Smalltalk
+Metacello new
+	baseline: 'Ston';
+	repository: 'github://svenvc/ston/repository';
+	load
+ ```
 
 ## Documentation
 
@@ -22,3 +30,15 @@ The most formal description is [The STON Specification](https://github.com/svenv
 
 *Sven Van Caekenberghe* 
 [MIT Licensed](https://github.com/svenvc/ston/blob/master/license.txt)
+
+
+
+## If you want to depend on it
+
+Add the following code to your Metacello baseline or configuration
+
+```
+spec 
+   baseline: 'Ston' 
+   with: [ spec repository: 'github://svenvc/ston/repository' ]
+```
