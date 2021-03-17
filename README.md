@@ -1,7 +1,6 @@
 # STON - Smalltalk Object Notation
 
-[![Build Status](https://travis-ci.org/svenvc/ston.svg?branch=master)](https://travis-ci.org/svenvc/ston)
-
+[![CI](https://github.com/svenvc/ston/actions/workflows/CI.yml/badge.svg)](https://github.com/svenvc/ston/actions/workflows/CI.yml)
 
 A lightweight text-based, human-readable data interchange format 
 for class-based object-oriented languages like Smalltalk.
@@ -11,7 +10,7 @@ As its name suggests, it is based on JSON (Javascript Object Notation).
 It adds symbols as a primitive value, class tags for object values and references. 
 Implementations for Pharo Smalltalk, Squeak and Gemstone Smalltalk are available.
 
-## Install
+## Installation
 
 ```Smalltalk
 Metacello new
@@ -31,9 +30,7 @@ The most formal description is [The STON Specification](https://github.com/svenv
 *Sven Van Caekenberghe* 
 [MIT Licensed](https://github.com/svenvc/ston/blob/master/license.txt)
 
-
-
-## If you want to depend on it
+## Dependency
 
 Add the following code to your Metacello baseline or configuration
 
