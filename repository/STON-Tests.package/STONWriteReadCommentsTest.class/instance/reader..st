@@ -1,6 +1,5 @@
 private
-materialize: string
+reader: string
 	^ STON reader
 		on: (STONCStyleCommentsSkipStream on: string readStream);
-		optimizeForLargeStructures;
-		next
+		yourself

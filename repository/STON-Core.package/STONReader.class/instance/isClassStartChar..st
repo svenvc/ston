@@ -1,3 +1,3 @@
 private
 isClassStartChar: char
-	^ 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' includes: char
+	^ char isLetter and: [ char isUppercase ]
