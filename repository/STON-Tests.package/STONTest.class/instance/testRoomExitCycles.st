@@ -25,5 +25,5 @@ testRoomExitCycles
 	self assert: ((object first at: #exit) at: #destination) identicalTo: object second.
 	self assert: ((object second at: #exit) at: #origin) identicalTo: object second.
 	self assert: ((object second at: #exit) at: #destination) identicalTo: object first.
-	"Try writing again the parse model" 
+	"Try writing again the parse model"
 	self assert: (STON toString: object) equals: ston

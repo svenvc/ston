@@ -1,6 +1,9 @@
 tests
 testIdentityDictionary
 	| collection |
-	collection := IdentityDictionary new at: 1 put: 1; at: 2 put: 2; yourself.
+	collection := IdentityDictionary new
+		at: 1 put: 1;
+		at: 2 put: 2;
+		yourself.
 	self assert: (self serialize: collection) equals: 'IdentityDictionary{1:1,2:2}'.
-	self assert: (self serialize: IdentityDictionary new) equals: 'IdentityDictionary{}'.
+	self assert: (self serialize: IdentityDictionary new) equals: 'IdentityDictionary{}'

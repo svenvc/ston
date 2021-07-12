@@ -1,6 +1,5 @@
 tests
 testWhitespace
 	| whitespace |
-	whitespace := { Character space. Character tab. Character cr. Character lf }.
-	self assert: (self materialize: whitespace, '123') equals: 123
-	
+	whitespace := {Character space . Character tab . Character cr . Character lf}.
+	self assert: (self materialize: whitespace , '123') equals: 123

@@ -1,6 +1,6 @@
 *STON-Core
 stonOn: stonWriter
-	"Use a map with element-occurences pairs as representation"
+	"Use a map with element-occurrences pairs as representation"
 
 	stonWriter 
 		writeObject: self 

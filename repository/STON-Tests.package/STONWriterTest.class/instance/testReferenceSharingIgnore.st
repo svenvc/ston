@@ -2,11 +2,12 @@ tests
 testReferenceSharingIgnore
 	| serializer array one |
 	serializer := [ :object | 
-		String streamContents: [ :stream |
-			STON writer 
+	String
+		streamContents: [ :stream | 
+			STON writer
 				on: stream;
-				referencePolicy: #ignore; 
+				referencePolicy: #ignore;
 				nextPut: object ] ].
-	one := { #one }.
+	one := {#one}.
 	array := STON listClass with: one with: one with: one.
-	self assert: (serializer value: array) equals: '[[#one],[#one],[#one]]'.
+	self assert: (serializer value: array) equals: '[[#one],[#one],[#one]]'
