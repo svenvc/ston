@@ -11,4 +11,4 @@ testMap
 	self assert: (self serialize: map) equals: '{''foo bar'':#ok}'.
 	map removeAll.
 	map at: 123 put: 456.
-	self assert: (self serialize: map) equals: '{123:456}'.
+	self assert: (self serialize: map) equals: '{123:456}'

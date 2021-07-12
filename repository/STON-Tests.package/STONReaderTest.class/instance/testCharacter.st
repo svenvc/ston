@@ -1,3 +1,3 @@
 tests
 testCharacter
-	self assert: (self materialize: 'Character[''A'']') identicalTo: $A.
+	self assert: (self materialize: 'Character[''A'']') identicalTo: $A
