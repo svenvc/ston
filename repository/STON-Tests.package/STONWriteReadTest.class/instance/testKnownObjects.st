@@ -13,5 +13,5 @@ testKnownObjects
 	self assert: object identicalTo: knownObject.
 	"not just the id is equal, but the rest of the object too"
 	self assert: object description equals: knownObject description.
-	
-	STONTestKnownObject resetKnownObjects.
+
+	STONTestKnownObject resetKnownObjects
