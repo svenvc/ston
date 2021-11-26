@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonProcessSubObjects: block
 	"Execute block to (potentially) change each of my subObjects.
 	In general, all instance and indexable variables are processed.

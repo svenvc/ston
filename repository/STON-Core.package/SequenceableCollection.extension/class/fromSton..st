@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	"Overwritten to use #streamContents: and #nextPut:"
 	

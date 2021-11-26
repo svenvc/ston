@@ -1,3 +1,3 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	^ ZnUrl fromString: stonReader parseListSingleton 

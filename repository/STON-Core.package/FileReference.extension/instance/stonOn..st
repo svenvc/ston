@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonOn: stonWriter
 	self fileSystem isDiskFileSystem
 		ifTrue: [ | diskFilePath |

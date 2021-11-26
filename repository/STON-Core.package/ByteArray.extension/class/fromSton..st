@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	"Use a hex representation"
 	

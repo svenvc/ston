@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	stonReader parseListDo: [ :each :index |
 		index = 1 ifTrue: [ x := each ].

@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	| theClassName theClass theMetaclass |
 	theClassName := stonReader parseListSingleton.

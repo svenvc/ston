@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonOn: stonWriter
 	"I store my instances as maps"
 	

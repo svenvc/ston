@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonOn: stonWriter
 	"Use an ISO style YYYY-MM-DD representation.
 	Since my current implementation is time zone offset sensitive, the offset has to be included."

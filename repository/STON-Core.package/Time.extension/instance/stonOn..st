@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonOn: stonWriter
 	"Use an ISO style HH:MM:SS.N representation (with optional nanoseconds)"
 	 

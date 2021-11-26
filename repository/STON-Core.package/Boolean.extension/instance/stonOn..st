@@ -1,3 +1,3 @@
-*ston-core
+*STON-Core
 stonOn: stonWriter
 	stonWriter writeBoolean: self

@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonOn: stonWriter
 	"For collections we chose to write a list of elements as delivered by #do:
 	This is not the best or most correct solution for all subclasses though,

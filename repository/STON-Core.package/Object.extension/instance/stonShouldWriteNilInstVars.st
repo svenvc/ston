@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonShouldWriteNilInstVars
 	"Return true if my instance variables that are nil should be written out, 
 	false otherwise. Overwrite when necessary. By default, return false."

@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 stonName
 	"Override to encode my instances using a different class name.
 	Use symbols as class name/tag."

@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	| elements |
 	elements := Array streamContents: [ :out |

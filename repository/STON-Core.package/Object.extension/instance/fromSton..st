@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	"Decode non-variable classes from a map of their instance variables and values.
 	Override to customize and add a matching #toSton: (see implementors)."

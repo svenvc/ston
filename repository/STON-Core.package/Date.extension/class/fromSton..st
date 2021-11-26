@@ -1,4 +1,4 @@
-*ston-core
+*STON-Core
 fromSton: stonReader
 	"Read a ISO YYYY-MM-DD format.
 	Since my current implementation is time zone offset sensitive, the offset has to be taken into account.
