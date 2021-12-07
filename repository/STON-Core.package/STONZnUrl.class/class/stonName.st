@@ -1,3 +1,3 @@
-*STON-Core
+ston
 stonName
 	^ #URL
