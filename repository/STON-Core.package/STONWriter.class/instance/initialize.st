@@ -3,7 +3,7 @@ initialize
 	super initialize.
 	stonCharacters := STONCharacters.
 	prettyPrint := false.
-	newLine := String cr.
+	newLine := OSPlatform current lineEnding.
 	level := 0.
 	referencePolicy := #normal.
 	jsonMode := keepNewLines := asciiOnly := false.
