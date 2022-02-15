@@ -11,4 +11,3 @@ lookupClass: name
 			Object allSubclasses 
 				detect: [ :class | class isMeta not and: [ class stonName = name ]  ]
 				ifNone: [ NotFound signalFor: name ] ]
-	

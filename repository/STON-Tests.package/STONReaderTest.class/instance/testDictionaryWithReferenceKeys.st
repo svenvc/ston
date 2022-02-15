@@ -11,4 +11,4 @@ testDictionaryWithReferenceKeys
 	object := (STON reader on: ston readStream) next.
 	object first doWithIndex: [ :each :index |
 		self assert: (object second at: each) equals: index ].
-	self assert: object second isHealthy 
+	self assert: object second isHealthy

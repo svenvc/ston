@@ -9,4 +9,4 @@ testSetWithReferenceElements
 	object := STON fromString: ston readStream.
 	object first do: [ :each |
 		self assert: (object second includes: each) ].
-	self assert: object second isHealthy 
+	self assert: object second isHealthy

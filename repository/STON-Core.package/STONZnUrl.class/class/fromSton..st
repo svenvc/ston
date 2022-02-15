@@ -1,3 +1,3 @@
 ston
 fromSton: stonReader
-	^ ZnUrl fromString: stonReader parseListSingleton 
+	^ ZnUrl fromString: stonReader parseListSingleton
