@@ -18,4 +18,4 @@ parseConstantDo: block
 					self match: 'il' do: [ block value: nil ] ].
 			(readStream peek = $u)
 				ifTrue: [
-					self match: 'ull' do: [ block value: nil ] ] ]		
+					self match: 'ull' do: [ block value: nil ] ] ]

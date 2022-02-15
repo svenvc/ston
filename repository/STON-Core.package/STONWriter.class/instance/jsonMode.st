@@ -1,4 +1,4 @@
 accessing
 jsonMode
 
-	^ jsonMode 
+	^ jsonMode

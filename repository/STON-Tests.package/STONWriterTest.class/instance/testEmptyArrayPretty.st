@@ -1,3 +1,3 @@
 tests
 testEmptyArrayPretty
-	self assert: (self serializePretty: STON listClass new) equals: '[ ]' 
+	self assert: (self serializePretty: STON listClass new) equals: '[ ]'
