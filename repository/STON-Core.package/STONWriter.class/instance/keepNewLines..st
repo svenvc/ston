@@ -1,4 +1,4 @@
-initialize-release
+initialization
 keepNewLines: boolean
 	"If true, any newline CR, LF or CRLF inside strings or symbols will not be escaped
 	but will instead be converted to the newline convention chosen, see #newLine:

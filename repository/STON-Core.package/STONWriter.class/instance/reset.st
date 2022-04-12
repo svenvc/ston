@@ -1,3 +1,3 @@
-initialize-release
+initialization
 reset
 	objects removeAll

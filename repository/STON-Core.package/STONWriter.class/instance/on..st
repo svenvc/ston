@@ -1,3 +1,3 @@
-initialize-release
+private - initialization
 on: aWriteStream
 	writeStream := aWriteStream

@@ -1,3 +1,3 @@
-initialize-release
+initialization
 asciiOnly: boolean
 	asciiOnly := boolean

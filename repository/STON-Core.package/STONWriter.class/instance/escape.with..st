@@ -1,4 +1,4 @@
-initialize-release
+private
 escape: char with: anObject
 	"Instruct me to escape char with object, either a replacement string or #pass"
 	

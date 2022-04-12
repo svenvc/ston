@@ -1,4 +1,4 @@
-initialize-release
+initialization
 jsonMode: boolean
 	(jsonMode := boolean)
 		ifTrue: [ 
