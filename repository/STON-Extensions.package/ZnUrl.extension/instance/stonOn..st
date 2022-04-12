@@ -1,4 +1,4 @@
-*STON-Core
+*STON-Extensions
 stonOn: stonWriter
 	stonWriter 
 		writeObject: self 

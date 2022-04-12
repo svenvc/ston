@@ -1,4 +1,4 @@
-*STON-Core
+*STON-Extensions
 fromSton: stonReader
 	"Overwritten to always return the default"
 	
