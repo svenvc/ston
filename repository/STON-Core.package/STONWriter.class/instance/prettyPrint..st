@@ -1,3 +1,3 @@
-initialize-release
+initialization
 prettyPrint: boolean
 	prettyPrint := boolean

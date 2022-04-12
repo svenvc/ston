@@ -1,4 +1,4 @@
-initialize-release
+initialization
 close
 	writeStream ifNotNil: [
 		writeStream close.
