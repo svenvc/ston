@@ -4,7 +4,7 @@
 
 *First version: October 30, 2018*
 
-*Last update: January 11, 2019*
+*Last update: July 22, 2022*
 
 
 STON, short for Smalltalk Object Notation, is a lightweight, text-based human-readable data interchange format for class-based object-oriented languages like Smalltalk.
@@ -142,6 +142,12 @@ STON uses a mostly standard IEEE 754 representation, excluding the infinity and 
     float = integer [ float-fraction ] [ float-exponent ] 
 
 Although both the float's fraction part and exponent part are optional, one of the two needs to be present for the number to be recognised as a float and not an integer.
+
+Three special floats, Nan, Inf and -Inf are represented using the more general STON object syntax (see further, case is significant, whitespace is not):
+
+- Float [ #nan ]
+- Float [ #infinity ]
+- Float [ #negativeInfinity ]
 
 
 ### Strings
