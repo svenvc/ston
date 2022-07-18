@@ -7,4 +7,7 @@ testFloat
 	self assert: ((self serialize: (1 / 3) asFloat) beginsWith: '0.333').
 	self assert: (self serialize: (10 raisedTo: 100) asFloat) equals: '1.0e100'.
 	self assert: (self serialize: (10 raisedTo: -50) asFloat) equals: '1.0e-50'.
-	self assert: (self serialize: (10 raisedTo: -50) asFloat negated) equals: '-1.0e-50'
+	self assert: (self serialize: (10 raisedTo: -50) asFloat negated) equals: '-1.0e-50'.
+	self assert: (self serialize: Float nan) equals: 'Float[#nan]'.
+	self assert: (self serialize: Float infinity) equals: 'Float[#infinity]'.
+	self assert: (self serialize: Float negativeInfinity) equals: 'Float[#negativeInfinity]'.
