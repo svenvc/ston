@@ -1,4 +1,4 @@
-*STON-Core
+*STON-Extensions
 stonOn: stonWriter
 	| name |
 	(self isTranslucent or: [ (name := self name) = #unnamed ])

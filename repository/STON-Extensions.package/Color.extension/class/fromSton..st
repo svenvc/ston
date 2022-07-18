@@ -1,4 +1,4 @@
-*STON-Core
+*STON-Extensions
 fromSton: stonReader
 	| representation |
 	representation := stonReader parseMapOrListRepresentation.

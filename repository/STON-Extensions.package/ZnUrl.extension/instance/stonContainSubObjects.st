@@ -1,3 +1,3 @@
-*STON-Core
+*STON-Extensions
 stonContainSubObjects
 	^ false
