@@ -1,4 +1,4 @@
-initialize-release
+initialization
 newLine: string
 	"Set the newline convention to be used when converting newlines, see #convertNewLines"
 	

@@ -1,3 +1,3 @@
-initalize
+initialization
 description: string
 	description := string

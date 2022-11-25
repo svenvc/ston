@@ -1,4 +1,4 @@
-initialize-release
+initialization
 optimizeForLargeStructures
 	self class environment
 		at: #FLLargeIdentityDictionary

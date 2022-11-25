@@ -1,3 +1,3 @@
-initialize-release
+initialization
 initialize
 	created := modified := DateAndTime now.

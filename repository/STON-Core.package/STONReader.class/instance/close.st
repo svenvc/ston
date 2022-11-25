@@ -1,4 +1,4 @@
-initialize-release
+initialization
 close
 	readStream ifNotNil: [
 		readStream close.

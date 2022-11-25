@@ -1,3 +1,3 @@
-initialize-release
+initialization
 on: stonWriter
 	writer := stonWriter

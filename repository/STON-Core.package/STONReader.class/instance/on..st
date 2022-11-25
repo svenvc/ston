@@ -1,3 +1,3 @@
-initialize-release
+initialization
 on: aReadStream
 	readStream := aReadStream
