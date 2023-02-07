@@ -9,4 +9,4 @@ writeFloat: float
 					float negative 
 						ifTrue: [ #negativeInfinity ]
 						ifFalse: [ #infinity ] ].
-			writeStream nextPutAll: 'Float['; print: argument; nextPut: $] ]
+			self writeObject: float named: #Float listSingleton: argument ]
