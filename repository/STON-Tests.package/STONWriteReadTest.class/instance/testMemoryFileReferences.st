@@ -10,7 +10,7 @@ testMemoryFileReferences
 	result := self materialize: ston.
 	self assert: result first exists.
 	self assert: result second exists.
-	self assert: result first fileSystem equals: result second fileSystem. 
-	self assert: result first fileSystem identicalTo: result second fileSystem. 
+	self assert: result first fileSystem equals: result second fileSystem.
+	self assert: result first fileSystem identicalTo: result second fileSystem.
 	self assert: result first fileSystem isMemoryFileSystem.
 	self assert: result second contents equals: 'ABC'

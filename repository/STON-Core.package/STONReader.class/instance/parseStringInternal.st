@@ -5,13 +5,13 @@ parseStringInternal
 	(delimiter = $' or: [ delimiter = $" ])
 		ifFalse: [ self error: ''' or " expected' ].
 	result := self
-		stringStreamContents: [ :stream | 
+		stringStreamContents: [ :stream |
 			convertNewLines
-				ifTrue: [ 
-					[ readStream atEnd or: [ readStream peek = delimiter ] ] 
+				ifTrue: [
+					[ readStream atEnd or: [ readStream peek = delimiter ] ]
 						whileFalse: [ self parseCharacterConvertingNewLinesOn: stream ] ]
-				ifFalse: [ 
-					[ readStream atEnd or: [ readStream peek = delimiter ] ] 
+				ifFalse: [
+					[ readStream atEnd or: [ readStream peek = delimiter ] ]
 						whileFalse: [ stream nextPut: self parseCharacter ] ] ].
 	self expectChar: delimiter.
 	^ result

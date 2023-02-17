@@ -3,13 +3,13 @@ encodeStringKeepingNewLines: string
 	| input char |
 	input := string readStream.
 	[ input atEnd ]
-		whileFalse: [ 
+		whileFalse: [
 			char := input next.
 			char = Character lf
 				ifTrue: [ writeStream nextPutAll: newLine ]
-				ifFalse: [ 
+				ifFalse: [
 					char = Character cr
-						ifTrue: [ 
+						ifTrue: [
 							input peekFor: Character lf.
 							writeStream nextPutAll: newLine ]
 						ifFalse: [ self encodeCharacter: char ] ] ]

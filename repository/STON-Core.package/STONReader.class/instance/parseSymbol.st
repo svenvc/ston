@@ -8,7 +8,7 @@ parseSymbol
 		[ readStream atEnd not and: [ self isSimpleSymbolChar: readStream peek ] ] whileTrue: [
 			stream nextPut: readStream next ] ].
 	string isEmpty
-		ifFalse: [ 
+		ifFalse: [
 			self consumeWhitespace.
 			^ string asSymbol ].
 	self error: 'unexpected input'

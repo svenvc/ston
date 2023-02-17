@@ -1,8 +1,8 @@
 tests
 testBag
-	self 
+	self
 		assert: (self serialize: (Bag withAll: #(a a)))
 		equals: 'Bag{#a:2}'.
-	self 
+	self
 		assert: (self serialize: Bag new)
 		equals: 'Bag{}'

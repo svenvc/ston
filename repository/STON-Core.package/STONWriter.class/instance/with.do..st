@@ -1,7 +1,7 @@
 private
 with: object do: block
 	| index |
-	referencePolicy = #ignore 
+	referencePolicy = #ignore
 		ifTrue: [ ^ block value ].
 	(index := objects at: object ifAbsent: [ nil ]) notNil
 		ifTrue: [

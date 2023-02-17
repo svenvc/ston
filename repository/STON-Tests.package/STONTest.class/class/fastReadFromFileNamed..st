@@ -1,7 +1,7 @@
 utilities
 fastReadFromFileNamed: path
 	^ path asFileReference
-		readStreamDo: [ :stream | 
+		readStreamDo: [ :stream |
 			STON reader
 				on: (ZnBufferedReadStream on: stream);
 				optimizeForLargeStructures;

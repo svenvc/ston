@@ -1,9 +1,9 @@
 parsing-internal
 parseConstantDo: block
-	"Parse and consume either true|false|nil|null and execute block 
+	"Parse and consume either true|false|nil|null and execute block
 	or else do nothing (but do not back up).
 	Hand written implementation to avoid the use of #position:"
-	
+
 	(readStream peek = $t)
 		ifTrue: [
 			^ self match: 'true' do: [ block value: true ] ].

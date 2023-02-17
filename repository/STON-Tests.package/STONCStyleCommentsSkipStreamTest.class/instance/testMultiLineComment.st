@@ -1,12 +1,12 @@
 testing
 testMultiLineComment
-	self 
-		assert: (STONCStyleCommentsSkipStream on: 'foo\//comment\bar' withCRs readStream) upToEnd 
+	self
+		assert: (STONCStyleCommentsSkipStream on: 'foo\//comment\bar' withCRs readStream) upToEnd
 		equals: 'foo\bar' withCRs.
-	self 
+	self
 		assert: (STONCStyleCommentsSkipStream on: 'foo\//comment\bar' withCRs readStream) nextLine
 		equals: 'foo'.
-	self 
-		assert: ((STONCStyleCommentsSkipStream on: 'foo\//comment\bar' withCRs readStream) nextLine; nextLine) 
+	self
+		assert: ((STONCStyleCommentsSkipStream on: 'foo\//comment\bar' withCRs readStream) nextLine; nextLine)
 		equals: 'bar'.
-	self assert: (STONCStyleCommentsSkipStream on: '//comment' readStream) atEnd.
+	self assert: (STONCStyleCommentsSkipStream on: '//comment' readStream) atEnd

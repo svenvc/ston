@@ -1,7 +1,7 @@
 instance creation
 dummy
 	"self dummy"
-	
+
 	| username password |
 	username := String streamContents: [ :stream |
 		stream << 'user'; print: 999 atRandom; << '@company'; print: 99 atRandom; << '.com' ].

@@ -2,12 +2,12 @@ private
 consumeToEOL
 	| eol char |
 	eol := false.
-	[ eol ] whileFalse: [ 
+	[ eol ] whileFalse: [
 		char := stream next.
 		(char isNil or: [ char = Character lf ])
 			ifTrue: [ eol := true ]
-			ifFalse: [ 
+			ifFalse: [
 				char = Character cr
-					ifTrue: [ 
+					ifTrue: [
 						eol := true.
 						stream peekFor: Character lf ] ] ]

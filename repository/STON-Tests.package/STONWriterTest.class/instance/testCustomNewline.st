@@ -6,6 +6,6 @@ testCustomNewline
 			newLine: String lf;
 			prettyPrint: true;
 			nextPut: #( 1 ) ].
-	self 
-		assert: output 
+	self
+		assert: output
 		equals: ('[\	1\]' withCRs replaceAll: Character cr with: Character lf)

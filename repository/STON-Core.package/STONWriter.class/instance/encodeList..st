@@ -7,7 +7,7 @@ encodeList: elements
 		ifFalse: [
 			self indentedDo: [
 				self newlineIndent.
-				elements 
+				elements
 					do: [ :each | self nextPut: each ]
 					separatedBy: [ self listElementSeparator ] ].
 			self newlineIndent ].

@@ -2,7 +2,7 @@ writing
 writeObject: object named: stonName listSingleton: element
 	self writeObject: object named: stonName do: [
 		writeStream nextPut: $[.
-		self 
+		self
 			prettyPrintSpace;
 			nextPut: element;
 			prettyPrintSpace.

@@ -1,10 +1,10 @@
 utilities
 fastWrite: object toFileNamed: path
 	^ path asFileReference
-		writeStreamDo: [ :fileStream | 
+		writeStreamDo: [ :fileStream |
 			ZnBufferedWriteStream
 				on: fileStream
-				do: [ :stream | 
+				do: [ :stream |
 					STON writer
 						on: stream;
 						optimizeForLargeStructures;

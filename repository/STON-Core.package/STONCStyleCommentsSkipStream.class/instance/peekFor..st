@@ -1,7 +1,7 @@
 accessing
 peekFor: object
 	^ self peek = object
-		ifTrue: [ 
+		ifTrue: [
 			self next.
 			true ]
 		ifFalse: [ false ]

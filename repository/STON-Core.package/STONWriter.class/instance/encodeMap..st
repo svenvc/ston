@@ -10,8 +10,8 @@ encodeMap: pairs
 			self indentedDo: [
 				self newlineIndent.
 				pairs keysAndValuesDo: [ :key :value |
-					first 
-						ifTrue: [ first := false ] 
+					first
+						ifTrue: [ first := false ]
 						ifFalse: [ self mapElementSeparator ].
 					self encodeKey: key value: value ] ].
 			self newlineIndent ].

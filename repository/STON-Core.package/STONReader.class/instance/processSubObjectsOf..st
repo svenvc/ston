@@ -2,10 +2,10 @@ private
 processSubObjectsOf: object
 	| unresolvedReferencesCount |
 	unresolvedReferencesCount := unresolvedReferences.
-	object stonProcessSubObjects: [ :each | 
+	object stonProcessSubObjects: [ :each |
 		each isStonReference
 			ifTrue: [ self resolveReference: each ]
-			ifFalse: [ 
+			ifFalse: [
 				each stonContainSubObjects
 					ifTrue: [ self processSubObjectsOf: each ]
 					ifFalse: [ each ] ] ].

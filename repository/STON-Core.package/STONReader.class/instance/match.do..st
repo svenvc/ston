@@ -4,6 +4,6 @@ match: string do: block
 	Else do nothing (but do not back up)"
 
 	(string allSatisfy: [ :each | readStream peekFor: each ])
-		ifTrue: [ 
+		ifTrue: [
 			self consumeWhitespace.
 			block value ]

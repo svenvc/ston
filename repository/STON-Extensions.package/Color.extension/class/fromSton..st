@@ -3,15 +3,15 @@ fromSton: stonReader
 	| representation |
 	representation := stonReader parseMapOrListRepresentation.
 	^ representation isArray
-		ifTrue: [ 
+		ifTrue: [
 			self named: representation first ]
-		ifFalse: [ 
+		ifFalse: [
 			(representation includesKey: #rgb)
-				ifTrue: [ 
+				ifTrue: [
 					self basicNew setRGB: (representation at: #rgb); setAlpha: 1.0 "backwards compatibility" ]
-				ifFalse: [ 
-					self 
-						r: (representation at: #red) 
-						g: (representation at: #green) 
-						b: (representation at: #blue) 
+				ifFalse: [
+					self
+						r: (representation at: #red)
+						g: (representation at: #green)
+						b: (representation at: #blue)
 						alpha: (representation at: #alpha) ] ]

@@ -1,7 +1,7 @@
 parsing-internal
 parseCharacterHexDigit
 	| digit |
-	readStream atEnd ifFalse: [ 
+	readStream atEnd ifFalse: [
 		digit := readStream next asInteger.
 		(digit between: "$0" 48 and: "$9" 57)
 			ifTrue: [ ^ digit - 48 ].

@@ -1,7 +1,7 @@
 tests
 testDiskFiles
 	| diskFiles |
-	diskFiles := STON listClass withAll: { 
+	diskFiles := STON listClass withAll: {
 		FileLocator image asFileReference.
 		FileLocator workingDirectory asAbsolute.
 		'foo/bar/readme.txt' asFileReference.

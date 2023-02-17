@@ -5,5 +5,5 @@ put: object onStreamPretty: writeStream
 	"String streamContents: [ :out | STON put: (0@0 extent: 20@30) onStreamPretty: out ]"
 
 	(self writer on: writeStream)
-		prettyPrint: true; 
+		prettyPrint: true;
 		nextPut: object

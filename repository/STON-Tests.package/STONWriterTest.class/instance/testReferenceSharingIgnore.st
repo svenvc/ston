@@ -1,9 +1,9 @@
 tests
 testReferenceSharingIgnore
 	| serializer array one |
-	serializer := [ :object | 
+	serializer := [ :object |
 	String
-		streamContents: [ :stream | 
+		streamContents: [ :stream |
 			STON writer
 				on: stream;
 				referencePolicy: #ignore;

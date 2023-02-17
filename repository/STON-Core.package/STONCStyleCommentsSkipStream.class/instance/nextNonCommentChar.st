@@ -3,15 +3,15 @@ nextNonCommentChar
 	| char |
 	char := stream next.
 	(self insideString and: [ char = $\ ])
-		ifTrue: [ 
-			escape := true. 
+		ifTrue: [
+			escape := true.
 			^ char ].
 	(char = $') | (char = $")
-		ifTrue: [ 
+		ifTrue: [
 			^ self handleStringDelimiter: char ].
-	escape := false. 
+	escape := false.
 	^ (char = $/ and: [ self insideString not and: [ (stream peek = $/) | (stream peek = $*) ] ])
-		ifTrue: [ 
+		ifTrue: [
 			self consumeComment.
 			stream next ]
 		ifFalse: [ char ]

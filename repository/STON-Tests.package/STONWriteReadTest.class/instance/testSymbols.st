@@ -10,4 +10,4 @@ testSymbols
 	self serializeAndMaterialize: symbols.
 	"non-simple symbols"
 	symbols := #( #'les-élèves-français' #'euro-€' #'ångström' ).
-	self serializeAndMaterialize: symbols.
+	self serializeAndMaterialize: symbols

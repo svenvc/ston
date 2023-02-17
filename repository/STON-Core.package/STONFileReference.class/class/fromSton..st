@@ -1,3 +1,3 @@
 ston
 fromSton: stonReader
-	^ stonReader parseListSingleton asFileReference.
+	^ stonReader parseListSingleton asFileReference

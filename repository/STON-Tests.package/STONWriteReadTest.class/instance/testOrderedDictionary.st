@@ -2,7 +2,7 @@ tests
 testOrderedDictionary
 	"OrderedDictionary is special because it does not inherit from Dictionary.
 	It might also not exist in some dialects, where this test could be skipped."
-	
+
 	| dictionaries orderedDictionaryClass orderedIdentityDictionaryClass |
 	orderedDictionaryClass := self environment at: #OrderedDictionary ifAbsent: [ Dictionary ].
 	orderedIdentityDictionaryClass := self environment at: #OrderedIdentityDictionary ifAbsent: [ IdentityDictionary ].

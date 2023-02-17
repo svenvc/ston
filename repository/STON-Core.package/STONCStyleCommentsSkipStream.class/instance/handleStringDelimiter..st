@@ -2,9 +2,9 @@ private
 handleStringDelimiter: char
 	self escape
 		ifTrue: [ escape := false ]
-		ifFalse: [ 
+		ifFalse: [
 			self insideString
-				ifTrue: [ 
+				ifTrue: [
 					char = delimiter
 						ifTrue: [ delimiter := nil ] ]
 				ifFalse: [ delimiter := char ] ].

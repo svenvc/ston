@@ -7,8 +7,8 @@ testSpecialClassNames
 	specialInstance := specialClass key: key.
 	ston := self serialize: specialInstance.
 	reader := self reader: ston.
-	(reader instVarNamed: #classes) 
-		at: specialClass name 
+	(reader instVarNamed: #classes)
+		at: specialClass name
 		put: specialClass.
 	object := reader next.
 	self assert: object equals: specialInstance.

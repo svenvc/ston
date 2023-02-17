@@ -1,3 +1,3 @@
 initialization
 initialize
-	created := modified := DateAndTime now.
+	created := modified := DateAndTime now

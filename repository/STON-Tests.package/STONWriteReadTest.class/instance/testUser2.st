@@ -10,4 +10,4 @@ testUser2
 	10 timesRepeat: [ | newUser |
 		newUser := STONTestUser2 dummy.
 		users at: newUser username put: newUser ].
-	self serializeAndMaterialize: users.
+	self serializeAndMaterialize: users

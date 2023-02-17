@@ -1,7 +1,7 @@
 utilities
 write: object toFileNamed: path
 	^ path asFileReference
-		writeStreamDo: [ :stream | 
+		writeStreamDo: [ :stream |
 			STON writer
 				on: stream;
 				nextPut: object ]

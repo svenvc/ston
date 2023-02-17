@@ -2,7 +2,7 @@ private
 escapeUnicode: codePoint
 	codePoint <= 16rFFFF
 		ifTrue: [ self escapeUnicode4: codePoint ]
-		ifFalse: [ 
+		ifFalse: [
 			codePoint <= 16r10FFFF
 				ifTrue: [ | leadSurrogate trailSurrogate shifted |
 					"Characters not in the Basic Multilingual Plane are encoded as a UTF-16 surrogate pair"

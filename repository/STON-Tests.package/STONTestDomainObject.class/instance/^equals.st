@@ -7,18 +7,18 @@ comparing
 	self class = anObject class
 		ifFalse: [ ^ false ].
 	^ color = anObject color
-		and: [ 
+		and: [
 			modified = anObject modified
-				and: [ 
+				and: [
 					created = anObject created
-						and: [ 
+						and: [
 							description = anObject description
-								and: [ 
+								and: [
 									boolean = anObject boolean
-										and: [ 
+										and: [
 											(float closeTo: anObject float) 		"Use #closeTo: instead of #= to increase portability"
-												and: [ 
-													bytes = anObject bytes 
-														and: [ 
-															integer = anObject integer 
+												and: [
+													bytes = anObject bytes
+														and: [
+															integer = anObject integer
 																and: [ tags = anObject tags ] ] ] ] ] ] ] ]

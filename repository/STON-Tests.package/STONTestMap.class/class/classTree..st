@@ -7,7 +7,7 @@ classTree: topClass
 			at: #name put: eachClass name asString;
 			at: #comment put: eachClass comment;
 			at: #isMeta put: eachClass isMeta;
-			at: #methods put: eachClass selectors.		
+			at: #methods put: eachClass selectors.
 		map at: eachClass put: info ].
 	map keysAndValuesDo: [ :eachClass :eachInfo |
 		eachClass == topClass

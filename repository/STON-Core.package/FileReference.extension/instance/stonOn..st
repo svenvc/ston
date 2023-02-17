@@ -6,9 +6,9 @@ stonOn: stonWriter
 			diskFilePath := path isWorkingDirectory
 				ifTrue: [ '.' ]
 				ifFalse: [ path pathString ].
-			stonWriter 
-				writeObject: self 
-				named: STONFileReference stonName 
+			stonWriter
+				writeObject: self
+				named: STONFileReference stonName
 				listSingleton: diskFilePath ]
-		ifFalse: [ 
+		ifFalse: [
 			super stonOn: stonWriter ]

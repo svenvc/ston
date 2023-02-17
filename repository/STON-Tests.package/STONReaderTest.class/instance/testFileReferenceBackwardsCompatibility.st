@@ -3,15 +3,15 @@ testFileReferenceBackwardsCompatibility
 	"we now have FILE, make sure that we support the old generic format"
 	| fs |
 	fs := STON toString: FileSystem disk.
-	self 
+	self
 		assert: (self materialize: 'FileReference{#path:RelativePath[],#filesystem:', fs, '}')
 		equals: FileLocator workingDirectory.
-	self 
+	self
 		assert: (self materialize: 'FileReference{#path:RelativePath[],#filesystem:', fs, '}')
 		equals: (self materialize: 'FILE[''.'']').
-	self 
+	self
 		assert: (self materialize: 'FileReference{#path:AbsolutePath[''tmp'',''foo.txt''],#filesystem:', fs, '}')
 		equals: '/tmp/foo.txt' asFileReference.
-	self 
+	self
 		assert: (self materialize: 'FileReference{#path:AbsolutePath[''tmp'',''foo.txt''],#filesystem:', fs, '}')
-		equals: (self materialize: 'FILE[''/tmp/foo.txt'']').
+		equals: (self materialize: 'FILE[''/tmp/foo.txt'']')

@@ -1,11 +1,11 @@
 initialization
 jsonMode: boolean
 	(jsonMode := boolean)
-		ifTrue: [ 
+		ifTrue: [
 			self
 				escape: $' with: #pass;
 				escape: $" with: '\"' ]
-		ifFalse: [ 
+		ifFalse: [
 			self
 				escape: $" with: #pass;
 				escape: $' with: '\''' ]

@@ -1,8 +1,8 @@
 parsing
 parseSimpleValue
 	| char |
-	readStream atEnd ifFalse: [ 
-		(self isClassStartChar: (char := readStream peek)) 
+	readStream atEnd ifFalse: [
+		(self isClassStartChar: (char := readStream peek))
 			ifTrue: [ ^ self parseObject ].
 		char = ${
 			ifTrue: [ ^ self parseMap ].

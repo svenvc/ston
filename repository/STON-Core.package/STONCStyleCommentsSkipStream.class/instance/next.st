@@ -1,7 +1,7 @@
 accessing
 next
 	^ peekedCharacter
-		ifNil: [ 
+		ifNil: [
 			stream atEnd
 				ifFalse: [ self nextNonCommentChar ] ]
 		ifNotNil: [ | character |

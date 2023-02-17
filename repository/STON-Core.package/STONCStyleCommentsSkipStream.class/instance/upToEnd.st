@@ -1,5 +1,5 @@
 accessing
 upToEnd
 	^ self collectionSpecies
-		streamContents: [ :collectionStream | 
+		streamContents: [ :collectionStream |
 			[ self atEnd ] whileFalse: [ collectionStream nextPut: self next ] ]

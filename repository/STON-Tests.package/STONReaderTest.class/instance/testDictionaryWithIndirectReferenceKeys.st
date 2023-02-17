@@ -4,7 +4,7 @@ testDictionaryWithIndirectReferenceKeys
 	keysCollection := OrderedCollection streamContents: [ :out |
 		10 timesRepeat: [ out nextPut: UUID new ] ].
 	dictionary := Dictionary new.
-	keysCollection doWithIndex: [ :each :index | 
+	keysCollection doWithIndex: [ :each :index |
 		dictionary at: (Array with: each) put: index ].
 	object := Array with: keysCollection with: dictionary.
 	ston := STON toStringPretty: object.

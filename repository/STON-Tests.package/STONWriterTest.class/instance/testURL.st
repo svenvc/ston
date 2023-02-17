@@ -11,4 +11,4 @@ testURL
 		equals: 'URL[''file:///var/log/system.log'']'.
 	self
 		assert: (self serialize: 'scheme://user:password@host:123/var/log/system.log?foo=1&bar#frag' asUrl)
-		equals: 'URL[''scheme://user:password@host:123/var/log/system.log?foo=1&bar#frag'']'.
+		equals: 'URL[''scheme://user:password@host:123/var/log/system.log?foo=1&bar#frag'']'

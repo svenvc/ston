@@ -9,8 +9,8 @@ testClassWithUnderscore
 	data := STON toString: cls new.
 	reader := STONReader on: data readStream.
 
-	(reader instVarNamed: #classes) 
-		at: cls name 
+	(reader instVarNamed: #classes)
+		at: cls name
 		put: cls.
 
 	self assert: reader next class equals: cls

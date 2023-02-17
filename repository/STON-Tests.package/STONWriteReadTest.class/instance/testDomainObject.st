@@ -10,4 +10,4 @@ testDomainObject
 	10 timesRepeat: [ | newObject |
 		newObject := STONTestDomainObject dummy.
 		objects at: newObject integer put: newObject ].
-	self serializeAndMaterialize: objects.
+	self serializeAndMaterialize: objects

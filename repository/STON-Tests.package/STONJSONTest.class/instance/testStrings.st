@@ -7,6 +7,6 @@ testStrings
 	self assert: (STONJSON fromString: '"string"') equals: 'string'.
 	self assert: (STONJSON fromString: '""') equals: ''.
 	self assert: (STONJSON fromString: '"élèves français"') equals: 'élèves français'.
-	self 
-		assert: (STONJSON fromString: '"\u212B \"Angstrom Symbol\""') 
-		equals: 8491 asCharacter asString, ' "Angstrom Symbol"'.
+	self
+		assert: (STONJSON fromString: '"\u212B \"Angstrom Symbol\""')
+		equals: 8491 asCharacter asString, ' "Angstrom Symbol"'

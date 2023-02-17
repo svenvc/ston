@@ -3,5 +3,5 @@ peek
 	^ peekedCharacter
 		ifNil: [
 			stream atEnd
-				ifFalse: [ 
+				ifFalse: [
 					peekedCharacter := self nextNonCommentChar ] ]

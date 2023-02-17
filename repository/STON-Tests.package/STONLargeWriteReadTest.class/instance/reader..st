@@ -1,5 +1,5 @@
 private
 reader: string
-	^ (super reader: string) 
-		optimizeForLargeStructures; 
+	^ (super reader: string)
+		optimizeForLargeStructures;
 		yourself

@@ -1,7 +1,7 @@
 *STON-Core
 fromSton: stonReader
 	"My instances are stored as maps."
-	
+
 	| dictionary |
 	dictionary := self new.
 	stonReader parseMapDo: [ :key :value |

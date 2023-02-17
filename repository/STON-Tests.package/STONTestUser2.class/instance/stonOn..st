@@ -1,5 +1,5 @@
 ston-core
-stonOn: stonWriter	
+stonOn: stonWriter
 	stonWriter writeObject: self streamMap: [ :dictionary |
 		dictionary
 			at: #username put: username;

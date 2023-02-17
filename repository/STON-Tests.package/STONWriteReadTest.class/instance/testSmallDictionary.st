@@ -2,7 +2,7 @@ tests
 testSmallDictionary
 	"SmallDictionary is special because it does not inherit from Dictionary.
 	It might also not exist in some dialects, where this test could be skipped."
-	
+
 	| dictionaries smallDictionaryClass |
 	smallDictionaryClass := self environment at: #SmallDictionary ifAbsent: [ Dictionary ].
 	dictionaries := STON listClass withAll: {

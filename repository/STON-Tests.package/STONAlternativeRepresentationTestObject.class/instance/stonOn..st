@@ -1,5 +1,5 @@
 ston persistence
-stonOn: stonWriter	
+stonOn: stonWriter
 	stonWriter writeObject: self streamMap: [ :dictionary |
 		dictionary
 			at: #id put: self id;

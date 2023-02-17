@@ -6,10 +6,10 @@ parseObject
 		targetClass := self parseClass.
 		object := targetClass fromSton: self .
 		self setReference: reference to: object ]
-		on: NotFound 
+		on: NotFound
 		do: [ :notFound |
-			acceptUnknownClasses 
-				ifTrue: [ 
+			acceptUnknownClasses
+				ifTrue: [
 					object := STON mapClass new.
 					self storeReference: object.
 					self parseMapDo: [ :key :value |

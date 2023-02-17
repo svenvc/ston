@@ -16,7 +16,7 @@ classTreeExtended: topClass
 			methodsInfo at: eachMethod selector put: methodInfo ].
 		map at: eachClass put: info ].
 	map keysAndValuesDo: [ :eachClass :eachInfo |
-		eachClass == topClass 
+		eachClass == topClass
 			ifFalse: [ eachInfo at: #superclass put: (map at: eachClass superclass) ].
 		eachInfo at: #subclasses put: (eachClass subclasses collect: [ :subClass | map at: subClass ]) ].
 	^ map at: topClass

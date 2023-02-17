@@ -10,4 +10,4 @@ testAlternativeRepresentation
 	self assert: resultObject id equals: testObject id.
 	self assert: resultObject time equals: testObject time.
 	self assert: (resultObject gridReference x closeTo: testObject gridReference x).
-	self assert: (resultObject gridReference y closeTo: testObject gridReference y).
+	self assert: (resultObject gridReference y closeTo: testObject gridReference y)

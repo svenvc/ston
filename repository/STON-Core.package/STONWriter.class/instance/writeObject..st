@@ -2,14 +2,14 @@ writing
 writeObject: anObject
 	| instanceVariableNames |
 	(instanceVariableNames := anObject class stonAllInstVarNames) isEmpty
-		ifTrue: [ 
+		ifTrue: [
 			self writeObject: anObject do: [ self encodeMap: #() ] ]
-		ifFalse: [ 
-			self writeObject: anObject streamMap: [ :dictionary | 
-				instanceVariableNames do: [ :each | 
+		ifFalse: [
+			self writeObject: anObject streamMap: [ :dictionary |
+				instanceVariableNames do: [ :each |
 					(anObject instVarNamed: each)
-						ifNotNil: [ :value | 
+						ifNotNil: [ :value |
 							dictionary at: each asSymbol put: value ]
-						ifNil: [ 
-							anObject stonShouldWriteNilInstVars 
+						ifNil: [
+							anObject stonShouldWriteNilInstVars
 								ifTrue: [ dictionary at: each asSymbol put: nil ] ] ] ] ]

@@ -1,7 +1,7 @@
 tests
 testSpecialCharacters
 	| primitives |
-	primitives := STON listClass withAll: { 
+	primitives := STON listClass withAll: {
 		String withAll: { Character tab. Character lf. Character cr }.
 		String withAll: { $'. $". $\. $/ }.
 		'élèves français'.

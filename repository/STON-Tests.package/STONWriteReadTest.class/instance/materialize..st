@@ -1,5 +1,5 @@
 private
 materialize: string
-	^ STON reader 
+	^ STON reader
 		on: string readStream;
 		next

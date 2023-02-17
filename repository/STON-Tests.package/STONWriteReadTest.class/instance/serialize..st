@@ -1,6 +1,6 @@
 private
 serialize: anObject
 	^ String streamContents: [ :stream |
-		STON writer 
+		STON writer
 			on: stream;
 			nextPut: anObject ]

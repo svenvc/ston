@@ -4,7 +4,7 @@ parseNumber
 	negated := readStream peekFor: $-.
 	number := self parseNumberInteger.
 	(readStream peekFor: $/)
-		ifTrue: [ 
+		ifTrue: [
 			number := Fraction numerator: number denominator: self parseNumberInteger.
 			(readStream peekFor: $s)
 				ifTrue: [ number := ScaledDecimal newFromNumber: number scale: self parseNumberInteger ] ]
@@ -14,7 +14,7 @@ parseNumber
 				ifTrue: [ number := number + self parseNumberFraction. isFloat := true ].
 			((readStream peekFor: $e) or: [ readStream peekFor: $E ])
 				ifTrue: [ number := number * self parseNumberExponent ].
-			isFloat 
+			isFloat
 				ifTrue: [ number := number asFloat ] ].
 	negated
 		ifTrue: [ number := number negated ].
