@@ -1,5 +1,6 @@
 tests
 testFloat
+
 	self assert: ((self materialize: '1.5') closeTo: 1.5).
 	self assert: ((self materialize: '-1.5') closeTo: -1.5).
 	self assert: (self materialize: '0.0') isZero.
@@ -11,4 +12,4 @@ testFloat
 	self assert: (self materialize: 'Float[#nan]') isNaN.
 	self assert: (self materialize: 'Float[#infinity]') equals: Float infinity.
 	self assert: (self materialize: 'Float[#negativeInfinity]') equals: Float negativeInfinity.
-	self assert: (Float pi closeTo: (self materialize: 'Float[3.14149]'))
+	self assert: (Float pi closeTo: (self materialize: 'Float[3.14159]') precision: 0.00001)
